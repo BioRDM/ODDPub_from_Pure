@@ -1,0 +1,60 @@
+{
+  "name": "selenium-manager",
+  "version": "4.34.0",
+  "build": "hb23c6cf_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "subdir": "linux-64",
+  "fn": "selenium-manager-4.34.0-hb23c6cf_0.conda",
+  "md5": "b0e10ce25676464747ef1e918a24ce54",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/selenium-manager-4.34.0-hb23c6cf_0.conda",
+  "sha256": "be72087f3ec23b2dde6c7bf4c171c1b37f4195dc595201922cabc7e511693555",
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13"
+  ],
+  "constrains": [
+    "__glibc >=2.17"
+  ],
+  "license": "Apache-2.0",
+  "timestamp": 1751237724000,
+  "size": 2268417,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/home/dthedie/miniforge3/pkgs/selenium-manager-4.34.0-hb23c6cf_0.conda",
+  "extracted_package_dir": "/home/dthedie/miniforge3/pkgs/selenium-manager-4.34.0-hb23c6cf_0",
+  "files": [
+    "bin/selenium-manager",
+    "etc/conda/activate.d/selenium-manager_activate.sh",
+    "etc/conda/deactivate.d/selenium-manager_deactivate.sh"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "bin/selenium-manager",
+        "path_type": "hardlink",
+        "sha256": "f4dce83ee2ed9ad092f9f5196822f3110354327cb912e6c652b66dc5d9472e3b",
+        "size_in_bytes": 5537608,
+        "sha256_in_prefix": "f4dce83ee2ed9ad092f9f5196822f3110354327cb912e6c652b66dc5d9472e3b"
+      },
+      {
+        "_path": "etc/conda/activate.d/selenium-manager_activate.sh",
+        "path_type": "hardlink",
+        "sha256": "9f44acd2fbfb13fca94f7017517a24ef7618ae6e87525583be74385e951fa07b",
+        "size_in_bytes": 161,
+        "sha256_in_prefix": "9f44acd2fbfb13fca94f7017517a24ef7618ae6e87525583be74385e951fa07b"
+      },
+      {
+        "_path": "etc/conda/deactivate.d/selenium-manager_deactivate.sh",
+        "path_type": "hardlink",
+        "sha256": "37a753cff4aedaafdfc5c2d815b6c386d6063f6346981b60c13b85e11c44593f",
+        "size_in_bytes": 145,
+        "sha256_in_prefix": "37a753cff4aedaafdfc5c2d815b6c386d6063f6346981b60c13b85e11c44593f"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/dthedie/miniforge3/pkgs/selenium-manager-4.34.0-hb23c6cf_0",
+    "type": 1
+  }
+}

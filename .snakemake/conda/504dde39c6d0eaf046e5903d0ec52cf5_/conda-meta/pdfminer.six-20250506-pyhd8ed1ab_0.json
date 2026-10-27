@@ -1,0 +1,1772 @@
+{
+  "name": "pdfminer.six",
+  "version": "20250506",
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "pdfminer.six-20250506-pyhd8ed1ab_0.conda",
+  "md5": "7610cc572f8fd872287ee7e22735ccf3",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pdfminer.six-20250506-pyhd8ed1ab_0.conda",
+  "sha256": "dc8b9a81beca0b7afc8bbc1a45797ebb6c2b911fc1e610c359f38d8ede94e02d",
+  "depends": [
+    "charset-normalizer >=2.0.0",
+    "cryptography >=36.0.0",
+    "python >=3.8"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1746612162000,
+  "size": 4558846,
+  "requested_spec": "pdfminer.six=20250506",
+  "package_tarball_full_path": "/home/dthedie/miniforge3/pkgs/pdfminer.six-20250506-pyhd8ed1ab_0.conda",
+  "extracted_package_dir": "/home/dthedie/miniforge3/pkgs/pdfminer.six-20250506-pyhd8ed1ab_0",
+  "files": [
+    "bin/dumppdf.py",
+    "bin/pdf2txt.py",
+    "lib/python3.12/site-packages/pdfminer/__init__.py",
+    "lib/python3.12/site-packages/pdfminer/_saslprep.py",
+    "lib/python3.12/site-packages/pdfminer/arcfour.py",
+    "lib/python3.12/site-packages/pdfminer/ascii85.py",
+    "lib/python3.12/site-packages/pdfminer/casting.py",
+    "lib/python3.12/site-packages/pdfminer/ccitt.py",
+    "lib/python3.12/site-packages/pdfminer/cmap/78-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/78-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/78-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/78-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/78-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/78-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/78ms-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/78ms-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/83pv-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/83pv-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/90ms-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/90ms-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/90msp-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/90msp-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/90pv-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/90pv-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Add-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Add-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Add-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Add-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/B5pc-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/B5pc-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/CNS-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/CNS-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/CNS1-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/CNS1-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/CNS2-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/CNS2-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/ETHK-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/ETHK-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/ETen-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/ETen-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/ETenms-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/ETenms-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Ext-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Ext-RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Ext-RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Ext-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GB-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GB-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GB-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GB-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBK-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBK-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBK2K-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBK2K-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBKp-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBKp-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBT-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBT-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBT-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBT-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBTpc-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBTpc-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBpc-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/GBpc-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKdla-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKdla-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKdlb-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKdlb-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKgccs-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKgccs-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKm314-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKm314-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKm471-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKm471-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKscs-B5-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/HKscs-B5-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Hankaku-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Hankaku-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Hiragana-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Hiragana-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSC-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSC-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSC-Johab-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSC-Johab-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSCms-UHC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSCms-UHC-HW-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSCms-UHC-HW-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSCms-UHC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSCpc-EUC-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/KSCpc-EUC-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Katakana-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Katakana-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/NWP-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/NWP-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/README.txt",
+    "lib/python3.12/site-packages/pdfminer/cmap/RKSJ-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/RKSJ-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Roman-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/Roman-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UCS2-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UCS2-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UTF16-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UTF16-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UTF32-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UTF32-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UTF8-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniCNS-UTF8-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UCS2-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UCS2-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UTF16-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UTF16-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UTF32-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UTF32-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UTF8-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniGB-UTF8-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UCS2-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UCS2-HW-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UCS2-HW-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UCS2-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UTF16-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UTF16-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UTF32-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UTF32-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UTF8-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS-UTF8-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS2004-UTF16-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS2004-UTF16-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS2004-UTF32-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS2004-UTF32-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS2004-UTF8-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJIS2004-UTF8-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJISX0213-UTF32-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJISX0213-UTF32-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJISX02132004-UTF32-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniJISX02132004-UTF32-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UCS2-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UCS2-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UTF16-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UTF16-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UTF32-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UTF32-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UTF8-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/UniKS-UTF8-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/WP-Symbol-H.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/WP-Symbol-V.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/to-unicode-Adobe-CNS1.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/to-unicode-Adobe-GB1.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/to-unicode-Adobe-Japan1.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmap/to-unicode-Adobe-Korea1.pickle.gz",
+    "lib/python3.12/site-packages/pdfminer/cmapdb.py",
+    "lib/python3.12/site-packages/pdfminer/converter.py",
+    "lib/python3.12/site-packages/pdfminer/data_structures.py",
+    "lib/python3.12/site-packages/pdfminer/encodingdb.py",
+    "lib/python3.12/site-packages/pdfminer/fontmetrics.py",
+    "lib/python3.12/site-packages/pdfminer/glyphlist.py",
+    "lib/python3.12/site-packages/pdfminer/high_level.py",
+    "lib/python3.12/site-packages/pdfminer/image.py",
+    "lib/python3.12/site-packages/pdfminer/jbig2.py",
+    "lib/python3.12/site-packages/pdfminer/latin_enc.py",
+    "lib/python3.12/site-packages/pdfminer/layout.py",
+    "lib/python3.12/site-packages/pdfminer/lzw.py",
+    "lib/python3.12/site-packages/pdfminer/pdfcolor.py",
+    "lib/python3.12/site-packages/pdfminer/pdfdevice.py",
+    "lib/python3.12/site-packages/pdfminer/pdfdocument.py",
+    "lib/python3.12/site-packages/pdfminer/pdfexceptions.py",
+    "lib/python3.12/site-packages/pdfminer/pdffont.py",
+    "lib/python3.12/site-packages/pdfminer/pdfinterp.py",
+    "lib/python3.12/site-packages/pdfminer/pdfpage.py",
+    "lib/python3.12/site-packages/pdfminer/pdfparser.py",
+    "lib/python3.12/site-packages/pdfminer/pdftypes.py",
+    "lib/python3.12/site-packages/pdfminer/psexceptions.py",
+    "lib/python3.12/site-packages/pdfminer/psparser.py",
+    "lib/python3.12/site-packages/pdfminer/py.typed",
+    "lib/python3.12/site-packages/pdfminer/runlength.py",
+    "lib/python3.12/site-packages/pdfminer/settings.py",
+    "lib/python3.12/site-packages/pdfminer/utils.py",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/METADATA",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/RECORD",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/WHEEL",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/licenses/LICENSE",
+    "lib/python3.12/site-packages/pdfminer_six-0.0.0.dist-info/top_level.txt",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/_saslprep.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/arcfour.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/ascii85.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/casting.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/ccitt.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/cmapdb.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/converter.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/data_structures.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/encodingdb.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/fontmetrics.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/glyphlist.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/high_level.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/image.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/jbig2.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/latin_enc.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/layout.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/lzw.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdfcolor.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdfdevice.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdfdocument.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdfexceptions.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdffont.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdfinterp.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdfpage.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdfparser.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/pdftypes.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/psexceptions.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/psparser.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/runlength.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/settings.cpython-312.pyc",
+    "lib/python3.12/site-packages/pdfminer/__pycache__/utils.cpython-312.pyc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "python-scripts/dumppdf.py",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/pdfminer.six_1746612001559/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "489a2bd3c5d78868189aea8892d0fd3d118719748cf1c0d291ae1dd2a4213f6c",
+        "size_in_bytes": 14580,
+        "sha256_in_prefix": "ff736ffb9032f5ec62711a56bf2aa8a9c1a61b54f1f7bfb686315fbacd6ed9e4"
+      },
+      {
+        "_path": "python-scripts/pdf2txt.py",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/pdfminer.six_1746612001559/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "9537b561a87e7ec79d4eacb5bfda9d6f35441d5e1676daafc6b61a8f11d89174",
+        "size_in_bytes": 10091,
+        "sha256_in_prefix": "136b6504ffc79788ecb98fac8a451d0fab3882721690d8249ff18c7f8a4d5c3c"
+      },
+      {
+        "_path": "site-packages/pdfminer/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5eea23a99e7fde90b9d14ebb4b9138271a0083b14bdc952ee43c04f85908cf0e",
+        "size_in_bytes": 260,
+        "sha256_in_prefix": "5eea23a99e7fde90b9d14ebb4b9138271a0083b14bdc952ee43c04f85908cf0e"
+      },
+      {
+        "_path": "site-packages/pdfminer/_saslprep.py",
+        "path_type": "hardlink",
+        "sha256": "6d007d74037d9b364ff95746b1496ca6d6e5258663dcf18d36d010ece8889559",
+        "size_in_bytes": 3703,
+        "sha256_in_prefix": "6d007d74037d9b364ff95746b1496ca6d6e5258663dcf18d36d010ece8889559"
+      },
+      {
+        "_path": "site-packages/pdfminer/arcfour.py",
+        "path_type": "hardlink",
+        "sha256": "5ef25d5853df7f4cef05bb560d245969facc8faec53ea647172aae00bf1a8a3d",
+        "size_in_bytes": 927,
+        "sha256_in_prefix": "5ef25d5853df7f4cef05bb560d245969facc8faec53ea647172aae00bf1a8a3d"
+      },
+      {
+        "_path": "site-packages/pdfminer/ascii85.py",
+        "path_type": "hardlink",
+        "sha256": "4a832c5b46887bb94a96a521d4d1baae6047f714beb6bcffb19b1490fe198128",
+        "size_in_bytes": 1850,
+        "sha256_in_prefix": "4a832c5b46887bb94a96a521d4d1baae6047f714beb6bcffb19b1490fe198128"
+      },
+      {
+        "_path": "site-packages/pdfminer/casting.py",
+        "path_type": "hardlink",
+        "sha256": "89ffb769a4e619a581e661c2eeece934446d1cdf541662a20b27cf5ba9215c30",
+        "size_in_bytes": 2070,
+        "sha256_in_prefix": "89ffb769a4e619a581e661c2eeece934446d1cdf541662a20b27cf5ba9215c30"
+      },
+      {
+        "_path": "site-packages/pdfminer/ccitt.py",
+        "path_type": "hardlink",
+        "sha256": "2deb82e613374999c076eb1532d6e27a00022139d2ff3715ccde6d13c67494da",
+        "size_in_bytes": 21188,
+        "sha256_in_prefix": "2deb82e613374999c076eb1532d6e27a00022139d2ff3715ccde6d13c67494da"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a7e1f9a0941e66f56d06bdd4b2f108237a66b5501b7fa4b5e9a09a96475457e4",
+        "size_in_bytes": 20532,
+        "sha256_in_prefix": "a7e1f9a0941e66f56d06bdd4b2f108237a66b5501b7fa4b5e9a09a96475457e4"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a547e21cce698d2a814cbed4aee94a46523f9a8fe8f0ca2fd1450173df6e98ec",
+        "size_in_bytes": 20551,
+        "sha256_in_prefix": "a547e21cce698d2a814cbed4aee94a46523f9a8fe8f0ca2fd1450173df6e98ec"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "09635f0a38adecb373e750ae64f483f1b6d45d064373eb3417b94b65f248c5d6",
+        "size_in_bytes": 19882,
+        "sha256_in_prefix": "09635f0a38adecb373e750ae64f483f1b6d45d064373eb3417b94b65f248c5d6"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "5ac22384b98196f02605357927367b88a9afd537b1504eb52a7b816733163a00",
+        "size_in_bytes": 22969,
+        "sha256_in_prefix": "5ac22384b98196f02605357927367b88a9afd537b1504eb52a7b816733163a00"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "109240b21a496ff060dd7ededca78da5e3803157c3c0fb06aba17347ca58f200",
+        "size_in_bytes": 22990,
+        "sha256_in_prefix": "109240b21a496ff060dd7ededca78da5e3803157c3c0fb06aba17347ca58f200"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "ef2bbeb29d9e937f282b9129279ee39be3d3c29d0b062c1bc71a69214c687640",
+        "size_in_bytes": 19883,
+        "sha256_in_prefix": "ef2bbeb29d9e937f282b9129279ee39be3d3c29d0b062c1bc71a69214c687640"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78ms-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "8ce2ed9bbca6e39026182320ea2b0e18a902c89534ebc0b6aaaf8f585e1749c4",
+        "size_in_bytes": 25942,
+        "sha256_in_prefix": "8ce2ed9bbca6e39026182320ea2b0e18a902c89534ebc0b6aaaf8f585e1749c4"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/78ms-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "c377b0eebdcd6460d732c45ceb3ec00d0b408834678c129c0e9ac0d52f4dec67",
+        "size_in_bytes": 25964,
+        "sha256_in_prefix": "c377b0eebdcd6460d732c45ceb3ec00d0b408834678c129c0e9ac0d52f4dec67"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/83pv-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "6a8b5267890592b9185a84cd43408d56690b93c7101bd0a9bf5a26a1f39d8031",
+        "size_in_bytes": 26305,
+        "sha256_in_prefix": "6a8b5267890592b9185a84cd43408d56690b93c7101bd0a9bf5a26a1f39d8031"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/83pv-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "dd273ac3ca018083886994691d3453327a0ddd87ebfe774e9b573a691f175407",
+        "size_in_bytes": 26305,
+        "sha256_in_prefix": "dd273ac3ca018083886994691d3453327a0ddd87ebfe774e9b573a691f175407"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/90ms-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "5402ca275ff5cdb810186727547e3874b31461857ab48c26986c4130b5c3d9cf",
+        "size_in_bytes": 25732,
+        "sha256_in_prefix": "5402ca275ff5cdb810186727547e3874b31461857ab48c26986c4130b5c3d9cf"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/90ms-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "67ec3b0d5565445492b12f7b5eab3017b84fd46af7736f5c331e54264bd2fb49",
+        "size_in_bytes": 25757,
+        "sha256_in_prefix": "67ec3b0d5565445492b12f7b5eab3017b84fd46af7736f5c331e54264bd2fb49"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/90msp-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a85bc8750cef621467aa476cd999e6bc5e66c42aaf1c74a08632e6c0f99955b3",
+        "size_in_bytes": 25670,
+        "sha256_in_prefix": "a85bc8750cef621467aa476cd999e6bc5e66c42aaf1c74a08632e6c0f99955b3"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/90msp-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "48eb9737b2bb036499f1dbbb6821e74f218f5fdbff05825f2e18de55174165ec",
+        "size_in_bytes": 25688,
+        "sha256_in_prefix": "48eb9737b2bb036499f1dbbb6821e74f218f5fdbff05825f2e18de55174165ec"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/90pv-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "08c6463e60b4b24ba711c844c1d2abaee0d3e5f0f9452198ebeee161281a88f1",
+        "size_in_bytes": 24226,
+        "sha256_in_prefix": "08c6463e60b4b24ba711c844c1d2abaee0d3e5f0f9452198ebeee161281a88f1"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/90pv-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "0b1c838def87b351b1c16663465ffb1800977a274d842b5932ec64ceead32020",
+        "size_in_bytes": 24021,
+        "sha256_in_prefix": "0b1c838def87b351b1c16663465ffb1800977a274d842b5932ec64ceead32020"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Add-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "4b2023beece24c938e9c6cb4c355be88d19b5b8b0dbd4dee64ef069910463441",
+        "size_in_bytes": 21027,
+        "sha256_in_prefix": "4b2023beece24c938e9c6cb4c355be88d19b5b8b0dbd4dee64ef069910463441"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Add-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "378003e40c4506327f325a0b4debda46934ca9035edded63acca56bc5576444b",
+        "size_in_bytes": 24275,
+        "sha256_in_prefix": "378003e40c4506327f325a0b4debda46934ca9035edded63acca56bc5576444b"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Add-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "558157deeb898de99fe33281fdfacda5c95e256513a4ba44579a8862fad4b6d5",
+        "size_in_bytes": 24079,
+        "sha256_in_prefix": "558157deeb898de99fe33281fdfacda5c95e256513a4ba44579a8862fad4b6d5"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Add-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "1a5ab752aa4cd4acb12cee31a9b5650b917fd10fbe0a8b17aa9a57bcf065bb86",
+        "size_in_bytes": 20874,
+        "sha256_in_prefix": "1a5ab752aa4cd4acb12cee31a9b5650b917fd10fbe0a8b17aa9a57bcf065bb86"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "990e52c7459b0d9c3a6f3491611d1589af5980398e06ee7ed9b2f0de39dbfef4",
+        "size_in_bytes": 42594,
+        "sha256_in_prefix": "990e52c7459b0d9c3a6f3491611d1589af5980398e06ee7ed9b2f0de39dbfef4"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "4c330ad420434c68e27b27b16c4af7503a0d94b437ef8c4554356bb3b41eaf8a",
+        "size_in_bytes": 42549,
+        "sha256_in_prefix": "4c330ad420434c68e27b27b16c4af7503a0d94b437ef8c4554356bb3b41eaf8a"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/B5pc-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "01b777e8d2f67cb99c204e8792e810c2a4dc39760416810371d1fb6761940e16",
+        "size_in_bytes": 42602,
+        "sha256_in_prefix": "01b777e8d2f67cb99c204e8792e810c2a4dc39760416810371d1fb6761940e16"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/B5pc-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "5dbfc4d888ccd5756275e455994f1a287288c4d8dfe24c845bd5a5209481022f",
+        "size_in_bytes": 42557,
+        "sha256_in_prefix": "5dbfc4d888ccd5756275e455994f1a287288c4d8dfe24c845bd5a5209481022f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/CNS-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "d7ae970c305e97bbc5d9a12e396fcf5d3dd53563d41be41e4b69ecbbc793b9e5",
+        "size_in_bytes": 56990,
+        "sha256_in_prefix": "d7ae970c305e97bbc5d9a12e396fcf5d3dd53563d41be41e4b69ecbbc793b9e5"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/CNS-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "02f3d2e82617d952599548fcc0ea9f6d71c65c4709dcb96715f40901aca94491",
+        "size_in_bytes": 56943,
+        "sha256_in_prefix": "02f3d2e82617d952599548fcc0ea9f6d71c65c4709dcb96715f40901aca94491"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/CNS1-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "c525b152e96b97a958b87a9fdc347039ec9188892a8d5d78e29f4543afc843e9",
+        "size_in_bytes": 17615,
+        "sha256_in_prefix": "c525b152e96b97a958b87a9fdc347039ec9188892a8d5d78e29f4543afc843e9"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/CNS1-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "fd870d3e08bf4900fefd2db701ccf1b742ea45d34c7af95a690689cec66164a7",
+        "size_in_bytes": 17564,
+        "sha256_in_prefix": "fd870d3e08bf4900fefd2db701ccf1b742ea45d34c7af95a690689cec66164a7"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/CNS2-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "15500f341d9958d0f357ccd95da936564c2f46ec3f8f913a40ce365def58c119",
+        "size_in_bytes": 21723,
+        "sha256_in_prefix": "15500f341d9958d0f357ccd95da936564c2f46ec3f8f913a40ce365def58c119"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/CNS2-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2cbc6eab5d03a1e63239c33d316afa3b9c5832b74b4488f7408492347e578a29",
+        "size_in_bytes": 21723,
+        "sha256_in_prefix": "2cbc6eab5d03a1e63239c33d316afa3b9c5832b74b4488f7408492347e578a29"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/ETHK-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "0b86cbe3eb115bf7aae0912686e882fb02c05f700c511a6d713a8b0b1e60df94",
+        "size_in_bytes": 59548,
+        "sha256_in_prefix": "0b86cbe3eb115bf7aae0912686e882fb02c05f700c511a6d713a8b0b1e60df94"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/ETHK-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "dc6ac1269d57d1455f7e79d76bfe2aabc361a17952f06c3cfd8ca9afebaa60c3",
+        "size_in_bytes": 59481,
+        "sha256_in_prefix": "dc6ac1269d57d1455f7e79d76bfe2aabc361a17952f06c3cfd8ca9afebaa60c3"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/ETen-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "175b8e6478d641e17793c0c331f0d6ef60c2875eeec4a739135c742723acac98",
+        "size_in_bytes": 43982,
+        "sha256_in_prefix": "175b8e6478d641e17793c0c331f0d6ef60c2875eeec4a739135c742723acac98"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/ETen-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "02a8c5eb726baf1b9bb9313338d477c8ca200c4c06b2992e43dca6cbe7d44a12",
+        "size_in_bytes": 43924,
+        "sha256_in_prefix": "02a8c5eb726baf1b9bb9313338d477c8ca200c4c06b2992e43dca6cbe7d44a12"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/ETenms-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "605d10c0da8336efe2294c7dcf7ac31d25af57b952b3484acfa6d94cb8faf2d0",
+        "size_in_bytes": 320,
+        "sha256_in_prefix": "605d10c0da8336efe2294c7dcf7ac31d25af57b952b3484acfa6d94cb8faf2d0"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/ETenms-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "0f5b39cb67547c61564883bbde8a7522eb4a284af0cee3b89fdff408630d5d5d",
+        "size_in_bytes": 438,
+        "sha256_in_prefix": "0f5b39cb67547c61564883bbde8a7522eb4a284af0cee3b89fdff408630d5d5d"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "f04d25667260f5c1ac7cc3f58cd0aa8f8fe59bd2fde50ce0e2bc69d31f7ac3d2",
+        "size_in_bytes": 20429,
+        "sha256_in_prefix": "f04d25667260f5c1ac7cc3f58cd0aa8f8fe59bd2fde50ce0e2bc69d31f7ac3d2"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "c02eae4e48a2cdfbb1ef38beb447412f7b210280183824c9d452ed189599257c",
+        "size_in_bytes": 20455,
+        "sha256_in_prefix": "c02eae4e48a2cdfbb1ef38beb447412f7b210280183824c9d452ed189599257c"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Ext-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "607ffe278436167617315afe6f7b2ed4ca9a151dda18e0b8f669e208bd6abc6d",
+        "size_in_bytes": 22272,
+        "sha256_in_prefix": "607ffe278436167617315afe6f7b2ed4ca9a151dda18e0b8f669e208bd6abc6d"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Ext-RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "27f2e877ca024cbde2bebafa39d3064ce2e82c9ba805f518e9cd0fb3c70ecf49",
+        "size_in_bytes": 25721,
+        "sha256_in_prefix": "27f2e877ca024cbde2bebafa39d3064ce2e82c9ba805f518e9cd0fb3c70ecf49"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Ext-RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "f48ef5c0cd83e4d188f4780616a0fa5fd816f173888501804bcc511618853932",
+        "size_in_bytes": 25750,
+        "sha256_in_prefix": "f48ef5c0cd83e4d188f4780616a0fa5fd816f173888501804bcc511618853932"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Ext-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "7695e7bee7d24f6922f408851a6bf7cf8a31dd099b103feb9650e37647ba74fc",
+        "size_in_bytes": 22307,
+        "sha256_in_prefix": "7695e7bee7d24f6922f408851a6bf7cf8a31dd099b103feb9650e37647ba74fc"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GB-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "f921365e809fd33fc10711772741edd164a9a3ebd8a0bcabaf618bcb83d20f62",
+        "size_in_bytes": 22118,
+        "sha256_in_prefix": "f921365e809fd33fc10711772741edd164a9a3ebd8a0bcabaf618bcb83d20f62"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GB-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a9fea3f484a09b8ec3df9eaee3cd0dcb6c9890a18effeedd525d50551ce1cfb7",
+        "size_in_bytes": 22111,
+        "sha256_in_prefix": "a9fea3f484a09b8ec3df9eaee3cd0dcb6c9890a18effeedd525d50551ce1cfb7"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GB-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "d5a495fef1298e43404bd7e981438ed78fe84f00480c119e554409c8a270a61c",
+        "size_in_bytes": 21699,
+        "sha256_in_prefix": "d5a495fef1298e43404bd7e981438ed78fe84f00480c119e554409c8a270a61c"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GB-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "3f937d193a912656ea76be2c4f4a655e8deb586cce4787c399c692357d0cbf0a",
+        "size_in_bytes": 21694,
+        "sha256_in_prefix": "3f937d193a912656ea76be2c4f4a655e8deb586cce4787c399c692357d0cbf0a"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBK-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "8a8641fefbd6cf36216e4196433384d35d8d4fb3f2d167b3c1a1481968f30349",
+        "size_in_bytes": 68254,
+        "sha256_in_prefix": "8a8641fefbd6cf36216e4196433384d35d8d4fb3f2d167b3c1a1481968f30349"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBK-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "ead3d321f45f5d401b32121a4c0053f452f624a923293e858334430e788d5331",
+        "size_in_bytes": 68199,
+        "sha256_in_prefix": "ead3d321f45f5d401b32121a4c0053f452f624a923293e858334430e788d5331"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBK2K-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "c01baa0c788f3daaaff556834d4d5e302141ebb7ec3f26d9d911866660b1902f",
+        "size_in_bytes": 89917,
+        "sha256_in_prefix": "c01baa0c788f3daaaff556834d4d5e302141ebb7ec3f26d9d911866660b1902f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBK2K-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "6408bfd672c1ae6e7795c72e5bb9afeea0d2510cd9447a21c36e2fe807895115",
+        "size_in_bytes": 89872,
+        "sha256_in_prefix": "6408bfd672c1ae6e7795c72e5bb9afeea0d2510cd9447a21c36e2fe807895115"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBKp-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "3460acae8a9e40611bbc1182e4483582a76b04d4545319bd3f0a2a5bd83fadcf",
+        "size_in_bytes": 68148,
+        "sha256_in_prefix": "3460acae8a9e40611bbc1182e4483582a76b04d4545319bd3f0a2a5bd83fadcf"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBKp-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "e39baf790b0d93e8504fc4d49bef08e831840b44b2aba2bad221bd3e2fa7f0a8",
+        "size_in_bytes": 68102,
+        "sha256_in_prefix": "e39baf790b0d93e8504fc4d49bef08e831840b44b2aba2bad221bd3e2fa7f0a8"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBT-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "5edc55d60e14dcaaf092f97eb64fea126693b104f7fe82fd1b435f25f33a7f7a",
+        "size_in_bytes": 23815,
+        "sha256_in_prefix": "5edc55d60e14dcaaf092f97eb64fea126693b104f7fe82fd1b435f25f33a7f7a"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBT-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "575cad798504695fdd390159235a6c4f754c4bc1c77c05817a9bdde3f05c89e4",
+        "size_in_bytes": 23806,
+        "sha256_in_prefix": "575cad798504695fdd390159235a6c4f754c4bc1c77c05817a9bdde3f05c89e4"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBT-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "5cb25fe3e632be0bfef4ba3c17c32ff61008b8aa269819c72af2165f9f774cf8",
+        "size_in_bytes": 23339,
+        "sha256_in_prefix": "5cb25fe3e632be0bfef4ba3c17c32ff61008b8aa269819c72af2165f9f774cf8"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBT-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "9ba16fb8a2f36664a1d6c6271f85bd1bd9e8f5018accb5c04a608db576344189",
+        "size_in_bytes": 23322,
+        "sha256_in_prefix": "9ba16fb8a2f36664a1d6c6271f85bd1bd9e8f5018accb5c04a608db576344189"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBTpc-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "3c825575cf38352884b2919543911fa8580977dbe2b01d66139b209d2744c67c",
+        "size_in_bytes": 23650,
+        "sha256_in_prefix": "3c825575cf38352884b2919543911fa8580977dbe2b01d66139b209d2744c67c"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBTpc-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "ae293868c474ae87f7a31e24940f98bff892ea977e689eea86f4a10fec412abc",
+        "size_in_bytes": 23647,
+        "sha256_in_prefix": "ae293868c474ae87f7a31e24940f98bff892ea977e689eea86f4a10fec412abc"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBpc-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "664d42d0377e588451132409f0b10c4c99497af41dc9abd85e48794308d44386",
+        "size_in_bytes": 21945,
+        "sha256_in_prefix": "664d42d0377e588451132409f0b10c4c99497af41dc9abd85e48794308d44386"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/GBpc-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "fa7badbe40d515b1cfeaf60158bf508a45f80d50414855fd18d03f371ba8f3a3",
+        "size_in_bytes": 21956,
+        "sha256_in_prefix": "fa7badbe40d515b1cfeaf60158bf508a45f80d50414855fd18d03f371ba8f3a3"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "650ef8348f3e2bb2a9e92250d79f0aed02b7301edf4d379578ea4d67ac02ca46",
+        "size_in_bytes": 19781,
+        "sha256_in_prefix": "650ef8348f3e2bb2a9e92250d79f0aed02b7301edf4d379578ea4d67ac02ca46"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKdla-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "6354699fe8b433c2ce539e652360cc7586378622d1163e50782d58a5e3e88943",
+        "size_in_bytes": 45212,
+        "sha256_in_prefix": "6354699fe8b433c2ce539e652360cc7586378622d1163e50782d58a5e3e88943"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKdla-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "8309e0b1156f58911aa96eca0ede7bc0abdb9a3e0674855dc51380eb52b283d8",
+        "size_in_bytes": 45167,
+        "sha256_in_prefix": "8309e0b1156f58911aa96eca0ede7bc0abdb9a3e0674855dc51380eb52b283d8"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKdlb-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a95567ce70f8560f06d4301139cec9f048f975df0706d6956f4d856921be6d98",
+        "size_in_bytes": 44853,
+        "sha256_in_prefix": "a95567ce70f8560f06d4301139cec9f048f975df0706d6956f4d856921be6d98"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKdlb-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "b14223f89de638c4b4da3aee90719f596239e0b49cdf44a95c2d49fc38177e54",
+        "size_in_bytes": 44816,
+        "sha256_in_prefix": "b14223f89de638c4b4da3aee90719f596239e0b49cdf44a95c2d49fc38177e54"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKgccs-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "0aacafc532de1fb9868d156a711de1d6ce57718fc7ee1625afdcf628ba6b279f",
+        "size_in_bytes": 53104,
+        "sha256_in_prefix": "0aacafc532de1fb9868d156a711de1d6ce57718fc7ee1625afdcf628ba6b279f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKgccs-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "b133531f905dadd8227cb0179fb9eba066151f8f6d14bc40c629a18d9a7f944f",
+        "size_in_bytes": 53050,
+        "sha256_in_prefix": "b133531f905dadd8227cb0179fb9eba066151f8f6d14bc40c629a18d9a7f944f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKm314-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "7bd57f53cbb5ed1e8b246d8048a8b019ffeb9b9c2006d6f5684edc2f1e4a7910",
+        "size_in_bytes": 43667,
+        "sha256_in_prefix": "7bd57f53cbb5ed1e8b246d8048a8b019ffeb9b9c2006d6f5684edc2f1e4a7910"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKm314-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "dff77fdfdfda8bdc23785f0b0da060e2b39ee7dac590360d07813f2be7eb9172",
+        "size_in_bytes": 43618,
+        "sha256_in_prefix": "dff77fdfdfda8bdc23785f0b0da060e2b39ee7dac590360d07813f2be7eb9172"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKm471-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "208bc0e81043047c152dbadf811fbec3f52ef3d2b7f9a25b5e3e728eb1c51dbe",
+        "size_in_bytes": 44187,
+        "sha256_in_prefix": "208bc0e81043047c152dbadf811fbec3f52ef3d2b7f9a25b5e3e728eb1c51dbe"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKm471-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "19c95ab9b328fa3bfcc80f9776b1e76b26c6bb22269611b69918a643aa859cf2",
+        "size_in_bytes": 44144,
+        "sha256_in_prefix": "19c95ab9b328fa3bfcc80f9776b1e76b26c6bb22269611b69918a643aa859cf2"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKscs-B5-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2d1a3463baaf3ee810905937aae63599d211f8d275b37dd899fbce375e32ff2e",
+        "size_in_bytes": 59508,
+        "sha256_in_prefix": "2d1a3463baaf3ee810905937aae63599d211f8d275b37dd899fbce375e32ff2e"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/HKscs-B5-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "3535201facf28bbe553d262baea2f4e011946345eef1dd3f549db3ddb141a76c",
+        "size_in_bytes": 59473,
+        "sha256_in_prefix": "3535201facf28bbe553d262baea2f4e011946345eef1dd3f549db3ddb141a76c"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Hankaku-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2fb3f131e6afd98d103f2a313e21c04a51421a46fb33f430781113a4aca11b53",
+        "size_in_bytes": 840,
+        "sha256_in_prefix": "2fb3f131e6afd98d103f2a313e21c04a51421a46fb33f430781113a4aca11b53"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Hankaku-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "b76bed506a5593a0c6e715e2e659b8e1b157decba02c426bbc39165e6a00d2a8",
+        "size_in_bytes": 839,
+        "sha256_in_prefix": "b76bed506a5593a0c6e715e2e659b8e1b157decba02c426bbc39165e6a00d2a8"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Hiragana-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "ad583a37dee55420e42020e4ac3628cc028975419383af393cc1f004700d0c7f",
+        "size_in_bytes": 391,
+        "sha256_in_prefix": "ad583a37dee55420e42020e4ac3628cc028975419383af393cc1f004700d0c7f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Hiragana-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "d3071b58cbf5f60c0b288c6d45a303bb259c55af87723ebb67dcaf41cb64ea1f",
+        "size_in_bytes": 391,
+        "sha256_in_prefix": "d3071b58cbf5f60c0b288c6d45a303bb259c55af87723ebb67dcaf41cb64ea1f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSC-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "b992f8c87eacac9de8459e21148fda28f325df7d307cfb0ed960505c8006090b",
+        "size_in_bytes": 24040,
+        "sha256_in_prefix": "b992f8c87eacac9de8459e21148fda28f325df7d307cfb0ed960505c8006090b"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSC-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "fbb3dfabe2dc653fd3654dd64b7fb92dbbaf8fe198ef53fcfc15b3b197fa6817",
+        "size_in_bytes": 24078,
+        "sha256_in_prefix": "fbb3dfabe2dc653fd3654dd64b7fb92dbbaf8fe198ef53fcfc15b3b197fa6817"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "6861fbeac9b5e8f1f26f745fe9139c8acd139753ad7de4c0bb0e5a203eec5f25",
+        "size_in_bytes": 23563,
+        "sha256_in_prefix": "6861fbeac9b5e8f1f26f745fe9139c8acd139753ad7de4c0bb0e5a203eec5f25"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSC-Johab-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "b8fe203384cfb07ac8906ba74f0cd850396980b9699b2e1ff9c3b7218443feb6",
+        "size_in_bytes": 55016,
+        "sha256_in_prefix": "b8fe203384cfb07ac8906ba74f0cd850396980b9699b2e1ff9c3b7218443feb6"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSC-Johab-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "be98bd71b56eb9069cbfd4da52c9d16307577940361ee07ffa78b5993410f992",
+        "size_in_bytes": 55041,
+        "sha256_in_prefix": "be98bd71b56eb9069cbfd4da52c9d16307577940361ee07ffa78b5993410f992"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "21c15a7836958dd2346dda0fa47649d6a25e8c58afed82acaa02504723a522be",
+        "size_in_bytes": 23644,
+        "sha256_in_prefix": "21c15a7836958dd2346dda0fa47649d6a25e8c58afed82acaa02504723a522be"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSCms-UHC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "6e965d4a27bd5931fc77b646a129f0459bf4f855017346cd39b6df7410655695",
+        "size_in_bytes": 51667,
+        "sha256_in_prefix": "6e965d4a27bd5931fc77b646a129f0459bf4f855017346cd39b6df7410655695"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSCms-UHC-HW-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "b54853e5cd6c30f96f941954fc1a078ad8b628b6dd012fea15c3e99ece402c23",
+        "size_in_bytes": 51788,
+        "sha256_in_prefix": "b54853e5cd6c30f96f941954fc1a078ad8b628b6dd012fea15c3e99ece402c23"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSCms-UHC-HW-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "56dc639520f4e129e8b9eccb0ede9c3f30a7de49540256007199a554226c5717",
+        "size_in_bytes": 51821,
+        "sha256_in_prefix": "56dc639520f4e129e8b9eccb0ede9c3f30a7de49540256007199a554226c5717"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSCms-UHC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "e745b52cb1973599ff8d3e39c6df2a6a92413ccb3c9831ae3cfdb9136798c40e",
+        "size_in_bytes": 51698,
+        "sha256_in_prefix": "e745b52cb1973599ff8d3e39c6df2a6a92413ccb3c9831ae3cfdb9136798c40e"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSCpc-EUC-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "103dc40d5cb38aed5e990cc3cfd894ba1593ab94cce2803f48c6d55364111789",
+        "size_in_bytes": 27769,
+        "sha256_in_prefix": "103dc40d5cb38aed5e990cc3cfd894ba1593ab94cce2803f48c6d55364111789"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/KSCpc-EUC-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "f3c983d6c66ab0a1de779bbaa8b16e8280bcf75df54db4c41f4f3367bac5eeee",
+        "size_in_bytes": 27820,
+        "sha256_in_prefix": "f3c983d6c66ab0a1de779bbaa8b16e8280bcf75df54db4c41f4f3367bac5eeee"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Katakana-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "0081a9501b40879c63d6a276f90bca4ec0d6b05cc284d876e9a42849b75f6de6",
+        "size_in_bytes": 404,
+        "sha256_in_prefix": "0081a9501b40879c63d6a276f90bca4ec0d6b05cc284d876e9a42849b75f6de6"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Katakana-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "1aeaa3820d5b9dd6af61bed21690d5edd2d8e68d3f32810a515d72c11ba97146",
+        "size_in_bytes": 404,
+        "sha256_in_prefix": "1aeaa3820d5b9dd6af61bed21690d5edd2d8e68d3f32810a515d72c11ba97146"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/NWP-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "f8b04990c741e36eea61eb5f8d13bc99f5c85e3a74250c24ca0a5717f6da48d0",
+        "size_in_bytes": 21708,
+        "sha256_in_prefix": "f8b04990c741e36eea61eb5f8d13bc99f5c85e3a74250c24ca0a5717f6da48d0"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/NWP-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "b6c5fff860411fd8bd0e867f017cb30dfebbe43383a5d40856dea7273b3b61e4",
+        "size_in_bytes": 21779,
+        "sha256_in_prefix": "b6c5fff860411fd8bd0e867f017cb30dfebbe43383a5d40856dea7273b3b61e4"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/README.txt",
+        "path_type": "hardlink",
+        "sha256": "b98e93f140381d43da7c938887c1b105a2afc17705d5d58f3a39b57008cfd8a2",
+        "size_in_bytes": 3917,
+        "sha256_in_prefix": "b98e93f140381d43da7c938887c1b105a2afc17705d5d58f3a39b57008cfd8a2"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/RKSJ-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "04eebe180a76d4cbf9bb30766f3f6e6a34bd405e9f3d2489a4a224b6ea8b4183",
+        "size_in_bytes": 23030,
+        "sha256_in_prefix": "04eebe180a76d4cbf9bb30766f3f6e6a34bd405e9f3d2489a4a224b6ea8b4183"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/RKSJ-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "e82162f5e17a530d30ba4286e8cfe5fd7b06c15bb24bd35c24fffb0c0bfe6fae",
+        "size_in_bytes": 23048,
+        "sha256_in_prefix": "e82162f5e17a530d30ba4286e8cfe5fd7b06c15bb24bd35c24fffb0c0bfe6fae"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Roman-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "c14560f556fddfb5ce63969202d0dadf945e1d299c83b4a2d0f63bc32b621ae5",
+        "size_in_bytes": 394,
+        "sha256_in_prefix": "c14560f556fddfb5ce63969202d0dadf945e1d299c83b4a2d0f63bc32b621ae5"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/Roman-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "9c384ecad95c1d84f8217fb6d45e691f2dd6d32868ea376e1cdab5b5cadd3473",
+        "size_in_bytes": 394,
+        "sha256_in_prefix": "9c384ecad95c1d84f8217fb6d45e691f2dd6d32868ea376e1cdab5b5cadd3473"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UCS2-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "9bfcba21348cd2f285da716de8cb8caba8792eb7c0d9f9e2d58e188c6a4fc540",
+        "size_in_bytes": 67459,
+        "sha256_in_prefix": "9bfcba21348cd2f285da716de8cb8caba8792eb7c0d9f9e2d58e188c6a4fc540"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UCS2-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a2ff40a0f62dcb9fa0870b762a4ae3df9d17a5a934d647adcf60bc87b9b6a9ac",
+        "size_in_bytes": 67395,
+        "sha256_in_prefix": "a2ff40a0f62dcb9fa0870b762a4ae3df9d17a5a934d647adcf60bc87b9b6a9ac"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UTF16-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "3d046fd093e6e1c2faacc55d76f7e10004e604dc5c0d563a72798af9880b178f",
+        "size_in_bytes": 87819,
+        "sha256_in_prefix": "3d046fd093e6e1c2faacc55d76f7e10004e604dc5c0d563a72798af9880b178f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UTF16-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "fbe9d89a138223615d0ab393a02b17a503e2e234a8e9459830918cc2b1ae3c95",
+        "size_in_bytes": 87751,
+        "sha256_in_prefix": "fbe9d89a138223615d0ab393a02b17a503e2e234a8e9459830918cc2b1ae3c95"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UTF32-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "deb724b20dbd952b6bd815f5c34c49ea09213699051abf6763616e67efc38cc1",
+        "size_in_bytes": 87400,
+        "sha256_in_prefix": "deb724b20dbd952b6bd815f5c34c49ea09213699051abf6763616e67efc38cc1"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UTF32-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "771a07682b349a6e3bf7940ea76f167fce13f8d48e843e2ef56c83c36563bc13",
+        "size_in_bytes": 87327,
+        "sha256_in_prefix": "771a07682b349a6e3bf7940ea76f167fce13f8d48e843e2ef56c83c36563bc13"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UTF8-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a23c0066b14500c5fd93d6a96fcf4d00757766caf710532f8c272c6064be5ab3",
+        "size_in_bytes": 82631,
+        "sha256_in_prefix": "a23c0066b14500c5fd93d6a96fcf4d00757766caf710532f8c272c6064be5ab3"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniCNS-UTF8-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "cb8aa3e0f692167dd234aab1c598997d822533f3aea0e61474d466c71c100ad5",
+        "size_in_bytes": 82562,
+        "sha256_in_prefix": "cb8aa3e0f692167dd234aab1c598997d822533f3aea0e61474d466c71c100ad5"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UCS2-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "0e33a654702dd5648e88e108f69cebf93995f31dbebfc17d92adc1e85949dd99",
+        "size_in_bytes": 97445,
+        "sha256_in_prefix": "0e33a654702dd5648e88e108f69cebf93995f31dbebfc17d92adc1e85949dd99"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UCS2-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a68b1f20918f68c3f122da4ed1f6b1dc26e4e71d0c5665c8501d82e4928ad956",
+        "size_in_bytes": 97441,
+        "sha256_in_prefix": "a68b1f20918f68c3f122da4ed1f6b1dc26e4e71d0c5665c8501d82e4928ad956"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UTF16-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2d896f38caffb620c3b649c481e2296ad7863cb5352cf9c5b050476bb95c408f",
+        "size_in_bytes": 101459,
+        "sha256_in_prefix": "2d896f38caffb620c3b649c481e2296ad7863cb5352cf9c5b050476bb95c408f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UTF16-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "233a16fc3fa5b9cb68dc878fa7fef4fb75ecf29ddedd26e6c4030c098ac150ad",
+        "size_in_bytes": 101331,
+        "sha256_in_prefix": "233a16fc3fa5b9cb68dc878fa7fef4fb75ecf29ddedd26e6c4030c098ac150ad"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UTF32-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2bfd4d0fd838ccb6e061733d14bb6bcdcfc6785f9eebbd1aa1b44b26751e5629",
+        "size_in_bytes": 101490,
+        "sha256_in_prefix": "2bfd4d0fd838ccb6e061733d14bb6bcdcfc6785f9eebbd1aa1b44b26751e5629"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UTF32-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "fd299c9335fc05622b5f4b81ebbd003a4c4e610a14423b64a97447c5ab02ae2c",
+        "size_in_bytes": 101357,
+        "sha256_in_prefix": "fd299c9335fc05622b5f4b81ebbd003a4c4e610a14423b64a97447c5ab02ae2c"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UTF8-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "115e481de49dd6e1f28c883f8e6f84c8b44d2c41b4e34ce945d344537e05e36d",
+        "size_in_bytes": 90500,
+        "sha256_in_prefix": "115e481de49dd6e1f28c883f8e6f84c8b44d2c41b4e34ce945d344537e05e36d"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniGB-UTF8-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "6a494d40f5c4696ebc4711337a5c9c75a29c5709a1bce273e74bcb96e60eafb8",
+        "size_in_bytes": 90368,
+        "sha256_in_prefix": "6a494d40f5c4696ebc4711337a5c9c75a29c5709a1bce273e74bcb96e60eafb8"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UCS2-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "690f47bb8b1088a90eb725aaec46d0ae4e49514d34631b39781b4e02092da10b",
+        "size_in_bytes": 35934,
+        "sha256_in_prefix": "690f47bb8b1088a90eb725aaec46d0ae4e49514d34631b39781b4e02092da10b"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UCS2-HW-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a99b50e9af8664f1355a9c11e854a0688572c60ceda7c98a59bd41f186023484",
+        "size_in_bytes": 412,
+        "sha256_in_prefix": "a99b50e9af8664f1355a9c11e854a0688572c60ceda7c98a59bd41f186023484"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UCS2-HW-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "267cffbeb41b759d691dce7e9358d1a044be8d13c1b3a6f18a9f2f134751a12d",
+        "size_in_bytes": 1402,
+        "sha256_in_prefix": "267cffbeb41b759d691dce7e9358d1a044be8d13c1b3a6f18a9f2f134751a12d"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UCS2-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "fea3900be9885098c8f0ecffd6364b0ca74925d47e8ab8e2e0b403b01983afe8",
+        "size_in_bytes": 35852,
+        "sha256_in_prefix": "fea3900be9885098c8f0ecffd6364b0ca74925d47e8ab8e2e0b403b01983afe8"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UTF16-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "082896892df1150bd18a57e2322279dcfa03b5feabb2363b55617ba6a4d96004",
+        "size_in_bytes": 58054,
+        "sha256_in_prefix": "082896892df1150bd18a57e2322279dcfa03b5feabb2363b55617ba6a4d96004"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UTF16-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "befaa6c0e17d9bc3319e3c57b10208b19dd9dbadc4b426eb7edb7004e5bf5a4e",
+        "size_in_bytes": 57928,
+        "sha256_in_prefix": "befaa6c0e17d9bc3319e3c57b10208b19dd9dbadc4b426eb7edb7004e5bf5a4e"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UTF32-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "7f101cb6b0ae66721a3092ad23f324b29d9c4e05ce114b7a2825facd807eb9cd",
+        "size_in_bytes": 57910,
+        "sha256_in_prefix": "7f101cb6b0ae66721a3092ad23f324b29d9c4e05ce114b7a2825facd807eb9cd"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UTF32-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "6ea53885e8ecea681bf391555474ad88351bcb84c75bb3259ddf83f46830b840",
+        "size_in_bytes": 57780,
+        "sha256_in_prefix": "6ea53885e8ecea681bf391555474ad88351bcb84c75bb3259ddf83f46830b840"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UTF8-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "ab8d525e876ea6422a73ecb30c0d545e9356df96ac6a4d915954f8c0b0d38050",
+        "size_in_bytes": 54764,
+        "sha256_in_prefix": "ab8d525e876ea6422a73ecb30c0d545e9356df96ac6a4d915954f8c0b0d38050"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS-UTF8-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "56aa1dafdd67a1989dc060b3ff29f1f671e8d12a5027545cd0467ba52b093b2a",
+        "size_in_bytes": 54684,
+        "sha256_in_prefix": "56aa1dafdd67a1989dc060b3ff29f1f671e8d12a5027545cd0467ba52b093b2a"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS2004-UTF16-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "5a04fdfd8ebba642fdc5a55cd11c415a875676e2a6916079824b7ce94addf189",
+        "size_in_bytes": 58081,
+        "sha256_in_prefix": "5a04fdfd8ebba642fdc5a55cd11c415a875676e2a6916079824b7ce94addf189"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS2004-UTF16-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "88c5045b22659f6e0d7668c6c06b9a3092ef81e019a65c990dda5af40b6e476e",
+        "size_in_bytes": 57960,
+        "sha256_in_prefix": "88c5045b22659f6e0d7668c6c06b9a3092ef81e019a65c990dda5af40b6e476e"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS2004-UTF32-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "810e1c4181a525a24e8f1579bf634b8cbf7c5ced3d95807f62730a3acd51d3de",
+        "size_in_bytes": 57940,
+        "sha256_in_prefix": "810e1c4181a525a24e8f1579bf634b8cbf7c5ced3d95807f62730a3acd51d3de"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS2004-UTF32-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2dd4e1cead3842c72f812e5c1bdb52a1c3fcbbbc8eef0be40442d704ba8b29af",
+        "size_in_bytes": 57811,
+        "sha256_in_prefix": "2dd4e1cead3842c72f812e5c1bdb52a1c3fcbbbc8eef0be40442d704ba8b29af"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS2004-UTF8-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "fdaa8d7268922da4ada59953bda61f68cd57db0514f8fffdcda4061da5afb0bc",
+        "size_in_bytes": 54829,
+        "sha256_in_prefix": "fdaa8d7268922da4ada59953bda61f68cd57db0514f8fffdcda4061da5afb0bc"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJIS2004-UTF8-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2325aac634a5eb34e7b0658688eeb9bd3eec6376847cdb2d960776a17988aae9",
+        "size_in_bytes": 54749,
+        "sha256_in_prefix": "2325aac634a5eb34e7b0658688eeb9bd3eec6376847cdb2d960776a17988aae9"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJISX0213-UTF32-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "5c05c04521e3825be9ca57a9b146276ef1798fde28efa774d6c6bdc66114918c",
+        "size_in_bytes": 57903,
+        "sha256_in_prefix": "5c05c04521e3825be9ca57a9b146276ef1798fde28efa774d6c6bdc66114918c"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJISX0213-UTF32-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "8c5ecec5f93f2d787e8dcd87982b1d69cbd01260a5233119a62753100a417c66",
+        "size_in_bytes": 57778,
+        "sha256_in_prefix": "8c5ecec5f93f2d787e8dcd87982b1d69cbd01260a5233119a62753100a417c66"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJISX02132004-UTF32-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "a9015d0f18abed4b7116c6f40a0b3cbd656fa3368a7ae0418cddb2ca8eaf8d30",
+        "size_in_bytes": 57930,
+        "sha256_in_prefix": "a9015d0f18abed4b7116c6f40a0b3cbd656fa3368a7ae0418cddb2ca8eaf8d30"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniJISX02132004-UTF32-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "f3e27416c17ad70e5baf8c9689232416ff9a97e00281ecda65fa095c5d444351",
+        "size_in_bytes": 57808,
+        "sha256_in_prefix": "f3e27416c17ad70e5baf8c9689232416ff9a97e00281ecda65fa095c5d444351"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UCS2-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "25b2f6225f6578a6efa887abc7c9692c0d10b0f7e80cfdf3b2fc0a3b2436eef1",
+        "size_in_bytes": 60683,
+        "sha256_in_prefix": "25b2f6225f6578a6efa887abc7c9692c0d10b0f7e80cfdf3b2fc0a3b2436eef1"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UCS2-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "84e14f40840c8f0f568503ea73ef9d6db710e70fa72615d1fda409697c683cbd",
+        "size_in_bytes": 60699,
+        "sha256_in_prefix": "84e14f40840c8f0f568503ea73ef9d6db710e70fa72615d1fda409697c683cbd"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UTF16-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "e48c092ea05b663d4450a1568a6d28963e3009609748a6fac225d00aaa8e338f",
+        "size_in_bytes": 61278,
+        "sha256_in_prefix": "e48c092ea05b663d4450a1568a6d28963e3009609748a6fac225d00aaa8e338f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UTF16-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "522c012d97ad399f9e886d50269458f04dd880140898f318ad0824a09679a023",
+        "size_in_bytes": 61298,
+        "sha256_in_prefix": "522c012d97ad399f9e886d50269458f04dd880140898f318ad0824a09679a023"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UTF32-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "2a9ad44f1b07e802d6275320f6bcb948f74738114c0649d0e45e243c4196421f",
+        "size_in_bytes": 61286,
+        "sha256_in_prefix": "2a9ad44f1b07e802d6275320f6bcb948f74738114c0649d0e45e243c4196421f"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UTF32-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "8f67bdc3b7983f570d7cdfdbf8969f09673ee077a1a3ff0575764adc6d4a0575",
+        "size_in_bytes": 61309,
+        "sha256_in_prefix": "8f67bdc3b7983f570d7cdfdbf8969f09673ee077a1a3ff0575764adc6d4a0575"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UTF8-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "986e8ad693f4f6ad16180908f5c019a17ccbd83a77fd432de34ac8e49d6f5a45",
+        "size_in_bytes": 54151,
+        "sha256_in_prefix": "986e8ad693f4f6ad16180908f5c019a17ccbd83a77fd432de34ac8e49d6f5a45"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/UniKS-UTF8-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "ddb8953b9135dd43bf7fb4f7b30d71769870c1a3a2d9915e42da1a2150807357",
+        "size_in_bytes": 54172,
+        "sha256_in_prefix": "ddb8953b9135dd43bf7fb4f7b30d71769870c1a3a2d9915e42da1a2150807357"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "97a9c3f8c875fb8a5a5951f469f425a902237314cea487a88e2943fb383cc4c4",
+        "size_in_bytes": 19826,
+        "sha256_in_prefix": "97a9c3f8c875fb8a5a5951f469f425a902237314cea487a88e2943fb383cc4c4"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/WP-Symbol-H.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "452d3f14d51578b90a0475949f028751be09b6c0f781e0c0f3259c97b3cf9946",
+        "size_in_bytes": 505,
+        "sha256_in_prefix": "452d3f14d51578b90a0475949f028751be09b6c0f781e0c0f3259c97b3cf9946"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/WP-Symbol-V.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "060fde272d9aeb6b28a190675e5a42db2c3f1f58695ae00eeeced415903d9bc4",
+        "size_in_bytes": 505,
+        "sha256_in_prefix": "060fde272d9aeb6b28a190675e5a42db2c3f1f58695ae00eeeced415903d9bc4"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/to-unicode-Adobe-CNS1.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "089f95c2fa56447e68bb0b5619bb492b491198fd2ec5ea6cace097694142de68",
+        "size_in_bytes": 138237,
+        "sha256_in_prefix": "089f95c2fa56447e68bb0b5619bb492b491198fd2ec5ea6cace097694142de68"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/to-unicode-Adobe-GB1.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "06b3f8be1fab4fb8e5dd48d330337fd4c31292729b0a244137982d2521e4d30d",
+        "size_in_bytes": 204425,
+        "sha256_in_prefix": "06b3f8be1fab4fb8e5dd48d330337fd4c31292729b0a244137982d2521e4d30d"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/to-unicode-Adobe-Japan1.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "de4e3d1dbe4e220f6406f31270af731b7650e8db2a5631018e6efd092384d053",
+        "size_in_bytes": 112987,
+        "sha256_in_prefix": "de4e3d1dbe4e220f6406f31270af731b7650e8db2a5631018e6efd092384d053"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmap/to-unicode-Adobe-Korea1.pickle.gz",
+        "path_type": "hardlink",
+        "sha256": "1d728c8f6a2cfa3644fe3658d2847781001efef47c8feb75ead4ff3f021f309e",
+        "size_in_bytes": 120859,
+        "sha256_in_prefix": "1d728c8f6a2cfa3644fe3658d2847781001efef47c8feb75ead4ff3f021f309e"
+      },
+      {
+        "_path": "site-packages/pdfminer/cmapdb.py",
+        "path_type": "hardlink",
+        "sha256": "53d6a3029a62d01bb156d2b2b934c65ed3fce1f8ff80f8dd6f4d492d6fb2bf63",
+        "size_in_bytes": 15358,
+        "sha256_in_prefix": "53d6a3029a62d01bb156d2b2b934c65ed3fce1f8ff80f8dd6f4d492d6fb2bf63"
+      },
+      {
+        "_path": "site-packages/pdfminer/converter.py",
+        "path_type": "hardlink",
+        "sha256": "cc5a3c0c7900817b5f15961f8e2d794db129e87dfcee748e5db7c62ad41fc468",
+        "size_in_bytes": 35530,
+        "sha256_in_prefix": "cc5a3c0c7900817b5f15961f8e2d794db129e87dfcee748e5db7c62ad41fc468"
+      },
+      {
+        "_path": "site-packages/pdfminer/data_structures.py",
+        "path_type": "hardlink",
+        "sha256": "12540df8351d68080aa8afd11256546c0782882cc364d9a67f645b544fa48030",
+        "size_in_bytes": 1654,
+        "sha256_in_prefix": "12540df8351d68080aa8afd11256546c0782882cc364d9a67f645b544fa48030"
+      },
+      {
+        "_path": "site-packages/pdfminer/encodingdb.py",
+        "path_type": "hardlink",
+        "sha256": "76b63936dcd430bbd12c64fa24ba12182e4ed475f05ea2162ac79f2952f07c9d",
+        "size_in_bytes": 3996,
+        "sha256_in_prefix": "76b63936dcd430bbd12c64fa24ba12182e4ed475f05ea2162ac79f2952f07c9d"
+      },
+      {
+        "_path": "site-packages/pdfminer/fontmetrics.py",
+        "path_type": "hardlink",
+        "sha256": "cd9b9342117ab5a9217f19eb993b5d32ac4e0d686ca04bb3fc47d1289cbddd47",
+        "size_in_bytes": 112593,
+        "sha256_in_prefix": "cd9b9342117ab5a9217f19eb993b5d32ac4e0d686ca04bb3fc47d1289cbddd47"
+      },
+      {
+        "_path": "site-packages/pdfminer/glyphlist.py",
+        "path_type": "hardlink",
+        "sha256": "68c1eec43bff7f6120f71de8810fedf5c0ce40cb4fc651c12d18e280f8a74c42",
+        "size_in_bytes": 130830,
+        "sha256_in_prefix": "68c1eec43bff7f6120f71de8810fedf5c0ce40cb4fc651c12d18e280f8a74c42"
+      },
+      {
+        "_path": "site-packages/pdfminer/high_level.py",
+        "path_type": "hardlink",
+        "sha256": "38e287b077db1b08c766dc022e4953e10be9175244c56dc0eab99f98111113b7",
+        "size_in_bytes": 7527,
+        "sha256_in_prefix": "38e287b077db1b08c766dc022e4953e10be9175244c56dc0eab99f98111113b7"
+      },
+      {
+        "_path": "site-packages/pdfminer/image.py",
+        "path_type": "hardlink",
+        "sha256": "51c00f37deb13cb187eced251378d1aef6cc433a4b6fcc03fb5e9e15bd6ae425",
+        "size_in_bytes": 9444,
+        "sha256_in_prefix": "51c00f37deb13cb187eced251378d1aef6cc433a4b6fcc03fb5e9e15bd6ae425"
+      },
+      {
+        "_path": "site-packages/pdfminer/jbig2.py",
+        "path_type": "hardlink",
+        "sha256": "d6c3bf7350f07eda512ea49032be99b097a5bc01e8df4d82e19987bdabb5af83",
+        "size_in_bytes": 11571,
+        "sha256_in_prefix": "d6c3bf7350f07eda512ea49032be99b097a5bc01e8df4d82e19987bdabb5af83"
+      },
+      {
+        "_path": "site-packages/pdfminer/latin_enc.py",
+        "path_type": "hardlink",
+        "sha256": "49c75e9ae059ed25fa115a222800be4a96a4910d9c62406653d396b1fc3570d7",
+        "size_in_bytes": 8530,
+        "sha256_in_prefix": "49c75e9ae059ed25fa115a222800be4a96a4910d9c62406653d396b1fc3570d7"
+      },
+      {
+        "_path": "site-packages/pdfminer/layout.py",
+        "path_type": "hardlink",
+        "sha256": "dd9833711874bfbc28cbf162fb6c215c1f5a92977944ad68b5b741f2705164da",
+        "size_in_bytes": 33507,
+        "sha256_in_prefix": "dd9833711874bfbc28cbf162fb6c215c1f5a92977944ad68b5b741f2705164da"
+      },
+      {
+        "_path": "site-packages/pdfminer/lzw.py",
+        "path_type": "hardlink",
+        "sha256": "97d4db2081d6982a74c27af18963672aa5e2b2bcd11742988d13d62263ac0771",
+        "size_in_bytes": 3245,
+        "sha256_in_prefix": "97d4db2081d6982a74c27af18963672aa5e2b2bcd11742988d13d62263ac0771"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdfcolor.py",
+        "path_type": "hardlink",
+        "sha256": "d31ec46afd400321103d4cbdf1d5e65952f0aa9681cb109b3ddcc62188f19ce9",
+        "size_in_bytes": 979,
+        "sha256_in_prefix": "d31ec46afd400321103d4cbdf1d5e65952f0aa9681cb109b3ddcc62188f19ce9"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdfdevice.py",
+        "path_type": "hardlink",
+        "sha256": "e46938f929038d6f5302c142ffdb2a50c2ed2d3630f78d85b36d5178598266ed",
+        "size_in_bytes": 9163,
+        "sha256_in_prefix": "e46938f929038d6f5302c142ffdb2a50c2ed2d3630f78d85b36d5178598266ed"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdfdocument.py",
+        "path_type": "hardlink",
+        "sha256": "7ffc4a6a132c3a7a14cbdf625b9cd5c9a065e92a22735114ad30d3221832f56e",
+        "size_in_bytes": 37593,
+        "sha256_in_prefix": "7ffc4a6a132c3a7a14cbdf625b9cd5c9a065e92a22735114ad30d3221832f56e"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdfexceptions.py",
+        "path_type": "hardlink",
+        "sha256": "3eed4d442cf45c7808f0539fe01f71bacae3ef13d091e30e1a4394480a2fc87c",
+        "size_in_bytes": 490,
+        "sha256_in_prefix": "3eed4d442cf45c7808f0539fe01f71bacae3ef13d091e30e1a4394480a2fc87c"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdffont.py",
+        "path_type": "hardlink",
+        "sha256": "565863b87bad5448b46a4fd565ffc5185d2096dccf3498924713abf97c4ac690",
+        "size_in_bytes": 38315,
+        "sha256_in_prefix": "565863b87bad5448b46a4fd565ffc5185d2096dccf3498924713abf97c4ac690"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdfinterp.py",
+        "path_type": "hardlink",
+        "sha256": "d2439dd0aa0df1da0f3e4500108f4541ebf3b3ab69593e871cbb75c110b3caac",
+        "size_in_bytes": 42893,
+        "sha256_in_prefix": "d2439dd0aa0df1da0f3e4500108f4541ebf3b3ab69593e871cbb75c110b3caac"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdfpage.py",
+        "path_type": "hardlink",
+        "sha256": "dce7fabbe9dfb89c80199d62cd815ba1672f15738044c09501262bb987221595",
+        "size_in_bytes": 8308,
+        "sha256_in_prefix": "dce7fabbe9dfb89c80199d62cd815ba1672f15738044c09501262bb987221595"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdfparser.py",
+        "path_type": "hardlink",
+        "sha256": "a2738c9123e38b20cdb3e319861e0e0f7e3dea083b0c4f4efcddfbe0f2e1fd1c",
+        "size_in_bytes": 5611,
+        "sha256_in_prefix": "a2738c9123e38b20cdb3e319861e0e0f7e3dea083b0c4f4efcddfbe0f2e1fd1c"
+      },
+      {
+        "_path": "site-packages/pdfminer/pdftypes.py",
+        "path_type": "hardlink",
+        "sha256": "5f358cc4bac7eb3ed35054c00cb7de251701dc314ca6e09c65868acb39f0e7e8",
+        "size_in_bytes": 12960,
+        "sha256_in_prefix": "5f358cc4bac7eb3ed35054c00cb7de251701dc314ca6e09c65868acb39f0e7e8"
+      },
+      {
+        "_path": "site-packages/pdfminer/psexceptions.py",
+        "path_type": "hardlink",
+        "sha256": "181afdd426d5c6c8ddd6431a3867fb4cfea78759d59ac8e5d02352eddc3326dc",
+        "size_in_bytes": 208,
+        "sha256_in_prefix": "181afdd426d5c6c8ddd6431a3867fb4cfea78759d59ac8e5d02352eddc3326dc"
+      },
+      {
+        "_path": "site-packages/pdfminer/psparser.py",
+        "path_type": "hardlink",
+        "sha256": "86800e2854a702699f11d7d56f60c65e561576c61067aa01ae9d1bba05eb0e09",
+        "size_in_bytes": 20347,
+        "sha256_in_prefix": "86800e2854a702699f11d7d56f60c65e561576c61067aa01ae9d1bba05eb0e09"
+      },
+      {
+        "_path": "site-packages/pdfminer/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/pdfminer/runlength.py",
+        "path_type": "hardlink",
+        "sha256": "ab5def96347a1458ff082f5ff0601061792ab2ef5aa1cc4a31f54ab9e5a031ce",
+        "size_in_bytes": 1332,
+        "sha256_in_prefix": "ab5def96347a1458ff082f5ff0601061792ab2ef5aa1cc4a31f54ab9e5a031ce"
+      },
+      {
+        "_path": "site-packages/pdfminer/settings.py",
+        "path_type": "hardlink",
+        "sha256": "3a8536ac8f1a54e71c715ac903138e4c25d9648b1c8e27ae0bd56cb188175e66",
+        "size_in_bytes": 15,
+        "sha256_in_prefix": "3a8536ac8f1a54e71c715ac903138e4c25d9648b1c8e27ae0bd56cb188175e66"
+      },
+      {
+        "_path": "site-packages/pdfminer/utils.py",
+        "path_type": "hardlink",
+        "sha256": "51eb49b953c85c518d682544eb9c783ebe016992a896696c25af4be91f60812d",
+        "size_in_bytes": 23612,
+        "sha256_in_prefix": "51eb49b953c85c518d682544eb9c783ebe016992a896696c25af4be91f60812d"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "bd8da37b50b6f04d01319f423b3685348eba149ff6d4dea1826fb32ca8167303",
+        "size_in_bytes": 4152,
+        "sha256_in_prefix": "bd8da37b50b6f04d01319f423b3685348eba149ff6d4dea1826fb32ca8167303"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "244a33c5e12b166f37dfa8814a53c254f13715ba0552487fa4b8dc82429974df",
+        "size_in_bytes": 19067,
+        "sha256_in_prefix": "244a33c5e12b166f37dfa8814a53c254f13715ba0552487fa4b8dc82429974df"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c17c53cdc1039e3ad3c056232cf72c5bfeff5e286e7c1c26a6205e8973411840",
+        "size_in_bytes": 91,
+        "sha256_in_prefix": "c17c53cdc1039e3ad3c056232cf72c5bfeff5e286e7c1c26a6205e8973411840"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "021aa9ce5cd018ba64313e243333bf81737009c25c82c438727325031dc94fac",
+        "size_in_bytes": 108,
+        "sha256_in_prefix": "021aa9ce5cd018ba64313e243333bf81737009c25c82c438727325031dc94fac"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "f01e5d699a33766b5caf4a5099f2856aba4f3f75ea1df05dc0572b34b4bea8f2",
+        "size_in_bytes": 1093,
+        "sha256_in_prefix": "f01e5d699a33766b5caf4a5099f2856aba4f3f75ea1df05dc0572b34b4bea8f2"
+      },
+      {
+        "_path": "site-packages/pdfminer_six-0.0.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "557778495098fe4bc17cd171390c6316f51330d1c49bcf275fb92c7c5b596ab9",
+        "size_in_bytes": 9,
+        "sha256_in_prefix": "557778495098fe4bc17cd171390c6316f51330d1c49bcf275fb92c7c5b596ab9"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 433
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/_saslprep.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2834
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/arcfour.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1847
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/ascii85.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2527
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/casting.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3501
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/ccitt.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 35464
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/cmapdb.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 24072
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/converter.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 45416
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/data_structures.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3048
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/encodingdb.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 5380
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/fontmetrics.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 103365
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/glyphlist.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 204238
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/high_level.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 8173
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/image.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 14048
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/jbig2.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 14406
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/latin_enc.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 7036
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/layout.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 52130
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/lzw.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 4519
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdfcolor.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1667
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdfdevice.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 12772
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdfdocument.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 54275
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdfexceptions.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1503
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdffont.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 47463
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdfinterp.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 57591
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdfpage.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 10480
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdfparser.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 7451
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/pdftypes.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 17675
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/psexceptions.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 903
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/psparser.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 30579
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/runlength.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1755
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/settings.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 161
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pdfminer/__pycache__/utils.cpython-312.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 28007
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/dthedie/miniforge3/pkgs/pdfminer.six-20250506-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "requested_specs": [
+    "pdfminer.six=20250506"
+  ]
+}

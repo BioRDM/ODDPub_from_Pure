@@ -1,0 +1,11 @@
+prefix=/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.7.0
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

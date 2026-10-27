@@ -1,0 +1,59 @@
+{
+  "name": "libpython",
+  "version": "3.12.16",
+  "build": "ha57cdbe_0_cpython",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "subdir": "linux-64",
+  "fn": "libpython-3.12.16-ha57cdbe_0_cpython.conda",
+  "md5": "e1442492859319edcd76293a2488156e",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libpython-3.12.16-ha57cdbe_0_cpython.conda",
+  "sha256": "71126cad347dfd1be645b1207baa3729e64f055edb5f785dadeb84872480a015",
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=15"
+  ],
+  "constrains": [],
+  "license": "Python-2.0",
+  "timestamp": 1793015475000,
+  "size": 8763999,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/home/dthedie/miniforge3/pkgs/libpython-3.12.16-ha57cdbe_0_cpython.conda",
+  "extracted_package_dir": "/home/dthedie/miniforge3/pkgs/libpython-3.12.16-ha57cdbe_0_cpython",
+  "files": [
+    "lib/libpython3.12.so",
+    "lib/libpython3.12.so.1.0",
+    "lib/libpython3.so"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libpython3.12.so",
+        "path_type": "softlink",
+        "sha256": "11982bf4b10666171b04f4367874e8449ce6a985e137d0bbe0b35d9ff732f356",
+        "size_in_bytes": 31841096
+      },
+      {
+        "_path": "lib/libpython3.12.so.1.0",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/python-split_1793013978562/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "sha256": "11982bf4b10666171b04f4367874e8449ce6a985e137d0bbe0b35d9ff732f356",
+        "size_in_bytes": 31841096,
+        "sha256_in_prefix": "573eb8d31d1a973b68523c701047dcaae291c81a30250b81bf0cdaab0d0becb0"
+      },
+      {
+        "_path": "lib/libpython3.so",
+        "path_type": "hardlink",
+        "sha256": "ab1fb56fa0961a9ba2867fa171f859f8e12b9f6cc53867c114c665d1a12b1a49",
+        "size_in_bytes": 14920,
+        "sha256_in_prefix": "ab1fb56fa0961a9ba2867fa171f859f8e12b9f6cc53867c114c665d1a12b1a49"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/dthedie/miniforge3/pkgs/libpython-3.12.16-ha57cdbe_0_cpython",
+    "type": 1
+  }
+}

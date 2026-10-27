@@ -1,0 +1,34 @@
+{
+  "name": "cpython",
+  "version": "3.12.16",
+  "build": "py312hd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "cpython-3.12.16-py312hd8ed1ab_0.conda",
+  "md5": "43352168a612c5c29c468bbd46ebdfa6",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/cpython-3.12.16-py312hd8ed1ab_0.conda",
+  "sha256": "a42d8eb23bf9ac1c70355875b336605bd264d1167cb7174f4510da392b417da7",
+  "depends": [
+    "python >=3.12,<3.13.0a0",
+    "python_abi * *_cp312"
+  ],
+  "constrains": [],
+  "noarch": "generic",
+  "license": "Python-2.0",
+  "package_type": "noarch_generic",
+  "timestamp": 1793014315000,
+  "size": 47307,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/home/dthedie/miniforge3/pkgs/cpython-3.12.16-py312hd8ed1ab_0.conda",
+  "extracted_package_dir": "/home/dthedie/miniforge3/pkgs/cpython-3.12.16-py312hd8ed1ab_0",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/home/dthedie/miniforge3/pkgs/cpython-3.12.16-py312hd8ed1ab_0",
+    "type": 1
+  }
+}

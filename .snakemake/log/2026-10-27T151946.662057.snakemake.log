@@ -1,0 +1,46 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-27 15:19:46
+  Workflow ID: 0f95c021-db67-4b0f-86b2-8ab0660ad659
+  Platform: Linux-7.0.0-38-generic-x86_64-with-glibc2.43
+  Host: HP-desktop
+  User: dthedie
+  Snakemake version: 9.27.1
+  Python version: 3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]
+  Command: /home/dthedie/miniforge3/envs/snakemake-tutorial/bin/snakemake -c 1 --sdm conda
+  Snakefile: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile
+  Base directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Run directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Working directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Config file(s): ['config.yaml']
+  Config MD5: 8922653c3e29ae44b6b753a14b0205fa
+
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+clean_table        1
+total              1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Oct 27 15:19:47 2026]
+localrule clean_table:
+    input: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/test_data/SBS_2019-2024_2026-03-24_test.csv
+    output: outputs/clean_table.csv
+    jobid: 0
+    reason: Updated input files: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/test_data/SBS_2019-2024_2026-03-24_test.csv
+    resources: tmpdir=/tmp
+Activating conda environment: .snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+Activating conda environment: .snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+[Tue Oct 27 15:19:48 2026]
+Finished jobid: 0 (Rule: clean_table)
+1 of 1 steps (100%) done
+Complete log(s): /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/log/2026-10-27T151946.662057.snakemake.log
+Elapsed time: 0:00:02.033124

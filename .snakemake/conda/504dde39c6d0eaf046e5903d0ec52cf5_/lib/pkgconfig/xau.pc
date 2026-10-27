@@ -1,0 +1,11 @@
+prefix=/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Xau
+Description: X authorization file management library
+Version: 1.0.12
+Requires: xproto
+Cflags: -I${includedir}
+Libs: -L${libdir} -lXau

@@ -1,0 +1,10 @@
+prefix=/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+exec_prefix=/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+libdir=/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_/lib
+includedir=/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_/include
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 3.2.0
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}

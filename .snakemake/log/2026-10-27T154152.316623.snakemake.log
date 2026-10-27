@@ -1,0 +1,3 @@
+SyntaxError in file "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile", line 27:
+invalid syntax. Perhaps you forgot a comma?:
+				download_folder = "outputs/PDFs"

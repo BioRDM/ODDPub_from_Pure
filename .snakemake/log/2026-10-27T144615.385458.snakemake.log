@@ -1,0 +1,218 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-27 14:46:15
+  Workflow ID: 37cd416f-1c83-45d7-8afc-f5b791340f7a
+  Platform: Linux-7.0.0-38-generic-x86_64-with-glibc2.43
+  Host: HP-desktop
+  User: dthedie
+  Snakemake version: 9.27.1
+  Python version: 3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]
+  Command: /home/dthedie/miniforge3/envs/snakemake-tutorial/bin/snakemake -c 1 --sdm conda
+  Snakefile: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile
+  Base directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Run directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Working directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Config file(s): ['config.yaml']
+  Config MD5: e4ac55006f8f6d0878382f47fc5f2067
+
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Creating conda environment envs/selenium.yaml...
+Downloading and installing remote packages.
+CreateCondaEnvironmentException:
+Could not create conda environment from /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/envs/selenium.yaml:
+Command:
+conda env create --quiet --no-default-packages --file "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/6eb6b4785e68c6be3f665caf3416ac67_.yaml" --prefix "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/6eb6b4785e68c6be3f665caf3416ac67_"
+Output:
+Channels:
+ - conda-pypi
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/version.py", line 44, in __call__
+        return cls._cache_[arg]
+               ~~~~~~~~~~~^^^^^
+    KeyError: '>=227[when'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/version.py", line 44, in __call__
+        return cls._cache_[arg]
+               ~~~~~~~~~~~^^^^^
+    KeyError: '227[when'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/match_spec.py", line 183, in __call__
+        return super().__call__(**kwargs)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/match_spec.py", line 310, in __init__
+        self._match_components = self._build_components(**kwargs)
+                                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/match_spec.py", line 590, in _build_components
+        return frozendict(_make_component(key, value) for key, value in kwargs.items())
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/frozendict/_frozendict_py.py", line 59, in __new__
+        dict.__init__(self, *args, **kwargs)
+        ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/match_spec.py", line 590, in <genexpr>
+        return frozendict(_make_component(key, value) for key, value in kwargs.items())
+                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/match_spec.py", line 604, in _make_component
+        matcher = _implementors[field_name](value)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/version.py", line 46, in __call__
+        val = cls._cache_[arg] = super().__call__(arg)
+                                 ~~~~~~~~~~~~~~~~^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/version.py", line 524, in __init__
+        vspec_str, matcher, is_exact = self.get_matcher(vspec)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/version.py", line 576, in get_matcher
+        self.matcher_vo = VersionOrder(vo_str)
+                          ~~~~~~~~~~~~^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/version.py", line 46, in __call__
+        val = cls._cache_[arg] = super().__call__(arg)
+                                 ~~~~~~~~~~~~~~~~^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/version.py", line 172, in __init__
+        raise InvalidVersionSpec(vstr, "invalid character(s)")
+    conda.exceptions.InvalidVersionSpec: Invalid version '227[when': invalid character(s)
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda_libmamba_solver/solver.py", line 996, in _matchspec_from_error_str
+        return MatchSpec(**kwargs)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/models/match_spec.py", line 190, in __call__
+        raise InvalidMatchSpec(msg, details=e) from e
+    conda.exceptions.InvalidMatchSpec: Invalid spec ' name=pywin32, version=>=227[when, build="__win"]': Invalid version '227[when': invalid character(s)
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/exception_handler.py", line 30, in __call__
+        return func(*args, **kwargs)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/cli/main.py", line 55, in main_subshell
+        exit_code = do_call(args, parser)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/cli/conda_argparse.py", line 357, in do_call
+        result = getattr(module, func_name)(args, parser)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/notices/core.py", line 151, in wrapper
+        return func(*args, **kwargs)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/cli/main_create.py", line 236, in execute
+        install(args, parser, "create")
+        ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/cli/install.py", line 359, in install
+        unlink_link_transaction = solver.solve_for_transaction(
+            deps_modifier=deps_modifier,
+        ...<8 lines>...
+            ),
+        )
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/core/solve.py", line 220, in solve_for_transaction
+        unlink_precs, link_precs = self.solve_for_diff(
+                                   ~~~~~~~~~~~~~~~~~~~^
+            update_modifier,
+            ^^^^^^^^^^^^^^^^
+        ...<5 lines>...
+            should_retry_solve,
+            ^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/core/solve.py", line 291, in solve_for_diff
+        final_precs = self.solve_final_state(
+            update_modifier,
+        ...<4 lines>...
+            should_retry_solve,
+        )
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda_libmamba_solver/solver.py", line 185, in solve_final_state
+        out_state = self._solving_loop(in_state, out_state, index)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda/common/io.py", line 110, in decorated
+        return f(*args, **kwds)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda_libmamba_solver/solver.py", line 328, in _solving_loop
+        solved, outcome = self._solve_attempt(in_state, out_state, index, attempt=attempt)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda_libmamba_solver/solver.py", line 385, in _solve_attempt
+        new_conflicts = self._maybe_raise_for_problems(outcome, index, out_state, old_conflicts)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda_libmamba_solver/solver.py", line 814, in _maybe_raise_for_problems
+        parsed_problems = self._parse_problems(unsolvable, index.db)
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda_libmamba_solver/solver.py", line 776, in _parse_problems
+        not_found.append(cls._matchspec_from_error_str(words[start:marker]))
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+      File "/home/dthedie/miniforge3/lib/python3.14/site-packages/conda_libmamba_solver/solver.py", line 998, in _matchspec_from_error_str
+        raise ValueError(f"Could not parse spec: {spec}") from exc
+    ValueError: Could not parse spec: ['pywin32', '>=227[when', '"__win"]']
+
+`$ /home/dthedie/miniforge3/condabin/conda env create --quiet --no-default-packages --file /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/6eb6b4785e68c6be3f665caf3416ac67_.yaml --prefix /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/6eb6b4785e68c6be3f665caf3416ac67_`
+
+  environment variables:
+                 CIO_TEST=<not set>
+        CONDA_DEFAULT_ENV=snakemake-tutorial
+                CONDA_EXE=/home/dthedie/miniforge3/bin/conda
+             CONDA_PREFIX=/home/dthedie/miniforge3/envs/snakemake-tutorial
+           CONDA_PREFIX_1=/home/dthedie/miniforge3
+    CONDA_PROMPT_MODIFIER=(snakemake-tutorial)
+         CONDA_PYTHON_EXE=/home/dthedie/miniforge3/bin/python
+               CONDA_ROOT=/home/dthedie/miniforge3
+              CONDA_SHLVL=2
+           CURL_CA_BUNDLE=<not set>
+               LD_PRELOAD=<not set>
+                     PATH=/opt/apache-maven-
+                          3.9.9/bin:/home/dthedie/.local/bin:/usr/local/texlive/2025/bin/x86_64-
+                          linux:/home/dthedie/.nvm/versions/node/v22.16.0/bin:/home/dthedie/mini
+                          forge3/envs/snakemake-tutorial/bin:/home/dthedie/miniforge3/condabin:/
+                          usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+                          :/usr/local/games:/snap/bin:/snap/bin
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+
+     active environment : snakemake-tutorial
+    active env location : /home/dthedie/miniforge3/envs/snakemake-tutorial
+            shell level : 2
+       user config file : /home/dthedie/.condarc
+ populated config files : /home/dthedie/miniforge3/.condarc
+          conda version : 26.9.4
+    conda-build version : not installed
+         python version : 3.14.10.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=skylake
+                          __conda=26.9.4=0
+                          __glibc=2.43=0
+                          __linux=7.0.0=0
+                          __unix=0=0
+       base environment : /home/dthedie/miniforge3  (writable)
+           distribution : Miniforge3 26.9.4-1 (sh, linux-64)
+      conda av data dir : /home/dthedie/miniforge3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+          package cache : /home/dthedie/miniforge3/pkgs
+                          /home/dthedie/.conda/pkgs
+          notices cache : /home/dthedie/.cache/conda/notices
+       envs directories : /home/dthedie/miniforge3/envs
+                          /home/dthedie/.conda/envs
+    temporary directory : /tmp
+               platform : linux-64
+             user-agent : conda/26.9.4 requests/2.34.2 CPython/3.14.10 Linux/7.0.0-38-generic ubuntu/26.04.1 glibc/2.43 solver/libmamba conda-libmamba-solver/26.10.0 libmambapy/2.9.0
+                UID:GID : 1000:1000
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+
+

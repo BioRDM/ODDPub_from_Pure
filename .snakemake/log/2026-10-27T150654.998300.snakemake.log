@@ -1,0 +1,55 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-27 15:06:54
+  Workflow ID: f83bbbd1-f278-4ac9-ab74-63d7a7cbb679
+  Platform: Linux-7.0.0-38-generic-x86_64-with-glibc2.43
+  Host: HP-desktop
+  User: dthedie
+  Snakemake version: 9.27.1
+  Python version: 3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]
+  Command: /home/dthedie/miniforge3/envs/snakemake-tutorial/bin/snakemake -c 1 --sdm conda
+  Snakefile: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile
+  Base directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Run directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Working directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Config file(s): ['config.yaml']
+  Config MD5: b57235b844013dc8a201f9cc0d6dc9b6
+
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+clean_table        1
+total              1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Oct 27 15:06:55 2026]
+localrule clean_table:
+    output: outputs/clean_table.csv
+    jobid: 0
+    reason: Missing output files: outputs/clean_table.csv
+    resources: tmpdir=/tmp
+Activating conda environment: .snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+Activating conda environment: .snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+RuleException:
+CalledProcessError in file "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile", line 17:
+Command 'source /home/dthedie/miniforge3/bin/activate '/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_'; set -euo pipefail;  python /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/scripts/tmp20otjdu0.clean_table.py' returned non-zero exit status 1.
+[Tue Oct 27 15:06:56 2026]
+Error in rule clean_table:
+    message: None
+    jobid: 0
+    output: outputs/clean_table.csv
+    conda-env: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error messages
+Complete log(s): /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/log/2026-10-27T150654.998300.snakemake.log
+Elapsed time: 0:00:01.957911
+WorkflowError:
+At least one job did not complete successfully.

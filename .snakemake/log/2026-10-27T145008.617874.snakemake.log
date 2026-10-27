@@ -1,0 +1,60 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-27 14:50:08
+  Workflow ID: 57eb9e57-a5bb-4c86-bad1-2c34e31b65ef
+  Platform: Linux-7.0.0-38-generic-x86_64-with-glibc2.43
+  Host: HP-desktop
+  User: dthedie
+  Snakemake version: 9.27.1
+  Python version: 3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]
+  Command: /home/dthedie/miniforge3/envs/snakemake-tutorial/bin/snakemake -c 1 --sdm conda
+  Snakefile: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile
+  Base directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Run directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Working directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Config file(s): ['config.yaml']
+  Config MD5: e4ac55006f8f6d0878382f47fc5f2067
+
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Creating conda environment envs/selenium.yaml...
+Downloading and installing remote packages.
+CreateCondaEnvironmentException:
+Could not create conda environment from /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/envs/selenium.yaml:
+Command:
+conda env create --quiet --no-default-packages --file "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/f259281e9aab0b047ae1bdb34e85a38e_.yaml" --prefix "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/f259281e9aab0b047ae1bdb34e85a38e_"
+Output:
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+
+PackagesNotFoundInChannelsError: The following packages are not available from current channels:
+
+  - docx2pdf=0.1.8
+  - pdfplumber=0.11.7
+
+Current channels:
+
+  - https://conda.anaconda.org/conda-forge
+  - defaults
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+

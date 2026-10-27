@@ -1,0 +1,55 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-27 15:43:03
+  Workflow ID: 1423bf77-1659-4bfe-bef7-8f488483919f
+  Platform: Linux-7.0.0-38-generic-x86_64-with-glibc2.43
+  Host: HP-desktop
+  User: dthedie
+  Snakemake version: 9.27.1
+  Python version: 3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]
+  Command: /home/dthedie/miniforge3/envs/snakemake-tutorial/bin/snakemake -c 1 outputs/PDFs/.download_complete
+  Snakefile: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile
+  Base directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Run directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Working directory: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure
+  Config file(s): ['config.yaml']
+  Config MD5: 8922653c3e29ae44b6b753a14b0205fa
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job              count
+-------------  -------
+clean_table          1
+download_pdfs        1
+total                2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Oct 27 15:43:03 2026]
+localrule clean_table:
+    input: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/test_data/SBS_2019-2024_2026-03-24_test.csv
+    output: outputs/clean_table.csv
+    jobid: 1
+    reason: Software environment definition has changed since last execution
+    resources: tmpdir=/tmp
+RuleException:
+CalledProcessError in file "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile", line 21:
+Command 'set -euo pipefail;  /home/dthedie/miniforge3/envs/snakemake-tutorial/bin/python3.12 /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/scripts/tmpqjsdj8nn.clean_table.py' returned non-zero exit status 1.
+[Tue Oct 27 15:43:03 2026]
+Error in rule clean_table:
+    message: None
+    jobid: 1
+    input: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/test_data/SBS_2019-2024_2026-03-24_test.csv
+    output: outputs/clean_table.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error messages
+Complete log(s): /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/log/2026-10-27T154303.816381.snakemake.log
+Elapsed time: 0:00:00.185146
+WorkflowError:
+At least one job did not complete successfully.
