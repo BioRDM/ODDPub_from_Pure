@@ -1,8 +1,0 @@
-#!/bin/sh
-'''exec' /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/.snakemake/conda/504dde39c6d0eaf046e5903d0ec52cf5_/bin/python "$0" "$@"
-' '''
-import sys
-from cffi._cffi_gen_src import run
-if __name__ == '__main__':
-    sys.argv[0] = sys.argv[0].removesuffix('.exe')
-    sys.exit(run())

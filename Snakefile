@@ -1,3 +1,6 @@
+from scripts.util import get_expected_files
+
+
 configfile: "config.yaml"
 
 env_map = {
@@ -27,11 +30,48 @@ rule download_pdfs:
         download_folder = config["main"]["pdf_output"],
         url_separator = config["main"].get("url_separator", " // ")
     output:
-        "outputs/PDFs/.download_complete"
+        touch("outputs/PDFs/.download_complete")
     conda:
         selected_env
     script:
         "scripts/download_pdfs.py"
 
-rule convert_pdfs_to_txt:
+rule convert_pdf_to_txt:
     input:
+        sentinel = "outputs/PDFs/.download_complete"
+    output:
+        txt = "outputs/txt/{sample}.txt"
+    params:
+        pdf_path = "outputs/PDFs/{sample}.pdf"
+    conda:
+        selected_env
+    script:
+        "scripts/pdf_to_txt.py"
+
+rule run_oddpub:
+    input:
+        txt_files = expand('outputs/txt/{sample}.txt',
+                           sample=get_expected_files(
+                               input_file_path=config['main']['input_file'],
+                               id_col_name=config['main'].get('article_id', 'Pure ID')
+                           ))
+    output:
+        "outputs/oddpub_results.csv"
+    params:
+        input_dir = "outputs/txt",
+        output_file = "outputs/oddpub_results.csv"
+    conda:
+        "envs/r-oddpub.yaml"
+    script:
+        "scripts/run_oddpub.R"
+
+rule all:
+    input:
+        txt_files = expand(
+            "outputs/txt/{sample}.txt",
+            sample=get_expected_files(
+                input_file_path=config['main']['input_file'],
+                id_col_name=config['main'].get('article_id', 'Pure ID')
+            )
+        ),
+        oddpub_results = "outputs/oddpub_results.csv"

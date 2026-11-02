@@ -1,3 +1,0 @@
-KeyError in file "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile", line 27:
-'pdf_output'
-  File "/media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/Snakefile", line 27, in <module>

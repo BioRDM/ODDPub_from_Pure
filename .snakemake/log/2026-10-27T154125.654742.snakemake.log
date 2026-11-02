@@ -1,5 +1,0 @@
-TabError in file "<string>", line 28:
-inconsistent use of tabs and spaces in indentation:
-	url_separator = config["main"].get("url_separator", "//")
-  File "/home/dthedie/miniforge3/envs/snakemake-tutorial/lib/python3.12/tokenize.py", line 588, in _generate_tokens_from_c_tokenizer
-  File "/home/dthedie/miniforge3/envs/snakemake-tutorial/lib/python3.12/tokenize.py", line 584, in _generate_tokens_from_c_tokenizer
