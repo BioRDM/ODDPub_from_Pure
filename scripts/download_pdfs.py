@@ -71,7 +71,7 @@ def convert_docx_to_pdf(docx_path: str | Path, pdf_path: str | Path = None):
 
 
 pure_table = pd.read_csv(snakemake.input.clean_table)
-pdf_urls = pure_table['Files']
+pdf_urls = pure_table[snakemake.params.article_links]
 file_names = pure_table['filename'].astype(str)
 download_folder = Path(snakemake.params.download_folder)
 url_separator = snakemake.params.url_separator

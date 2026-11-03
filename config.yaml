@@ -1,17 +1,8 @@
 os_type: linux  # linux, windows or macos
 
-metadata:
-  Author: Name of the report author
-  Email: Email address for the report author
-  Data description: Main data file description
-  Data access_date: 01-01-2020
-  Data source:
-  Data source_url:
-
 main:
-  input_file: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/test_data/SBS_2019-2024_2026-03-24_test.csv
-  pdf_output: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/outputs/PDFs
-  article_id: Pure ID
+  input_file: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/test_data/SBS_pub_2023-2024_test.csv
+  article_id: Article_Pure_ID
   article_links: Files
-  title_column: Title
   url_separator: " // "
+  author_id: Authors
