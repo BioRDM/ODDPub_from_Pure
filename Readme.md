@@ -30,7 +30,7 @@ If you are using Windows or MacOS, MS Word will need to be installed on your mac
 
 ### Snakemake
 
-Open Poweshell
+Open Powershell
 
 Install pixi
 
