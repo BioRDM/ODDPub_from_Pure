@@ -30,6 +30,8 @@ If you are using Windows or MacOS, MS Word will need to be installed on your mac
 
 ### Snakemake
 
+**If you have already done this setup, skip this section and go to "Usage"**
+
 Open Powershell
 
 Install pixi
@@ -91,6 +93,17 @@ When working with your own data, make sure the following fields are also set cor
 | article_links | Column name for the full text download links (usually called "Files" in Pure)                                                                                   |
 | url_separator | String that separates multiple URLs in the "article_links" column. If the string is "//", make sure to include spaces (" // ") so it does not match https://... |
 | author_id     | Column name for the author unique identifier (usually author name, or Pure ID)                                                                                  |
+
+If you haven't yet done it for this session, activate snakemake:
+
+```sh
+pixi init
+pixi workspace channel add conda-forge
+pixi workspace channel add bioconda
+pixi add snakemake
+pixi add conda
+pixi shell
+```
 
 Run the full pipeline:
 
