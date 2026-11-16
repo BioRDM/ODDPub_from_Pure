@@ -34,4 +34,6 @@ try:
         output_txt.touch()
 except Exception as e:
     print(f'ERROR converting {input_pdf.name}: {e}')
-    raise e
+    with open(output_txt, 'w') as f:
+        f.write("")
+    exit(0)
