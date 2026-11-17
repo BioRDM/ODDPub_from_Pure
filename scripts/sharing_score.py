@@ -7,6 +7,7 @@ pure_table = pd.read_csv(snakemake.input.pure_table)
 oddpub_results = (
     pd.read_csv(snakemake.input.oddpub_results)
     .assign(Article_ID=lambda x: x.article.str.replace('.txt', '').astype('int'))
+    .drop(columns=["open_data_statements", "open_code_statements"])
 )
 
 data_sharing = (
