@@ -6,22 +6,23 @@ import multiprocessing
 import sys
 
 
+def _target(pdf_path_str, laparams_dict, conn):
+    try:
+        lp = LAParams(
+            line_margin=laparams_dict['line_margin'],
+            char_margin=laparams_dict['char_margin'],
+            word_margin=laparams_dict['word_margin'],
+            boxes_flow=laparams_dict['boxes_flow']
+        )
+        text = extract_text(pdf_path_str, laparams=lp)
+        conn.send({'success': True, 'text': text})
+    except Exception as e:
+        conn.send({'success': False, 'error': str(e)})
+    finally:
+        conn.close()
+
+
 def extract_text_with_timeout(pdf_path, laparams, timeout_seconds):
-    def _target(pdf_path_str, laparams_dict, conn):
-        try:
-            from pdfminer.layout import LAParams
-            lp = LAParams(
-                line_margin=laparams_dict['line_margin'],
-                char_margin=laparams_dict['char_margin'],
-                word_margin=laparams_dict['word_margin'],
-                boxes_flow=laparams_dict['boxes_flow']
-            )
-            text = extract_text(pdf_path_str, laparams=lp)
-            conn.send({'success': True, 'text': text})
-        except Exception as e:
-            conn.send({'success': False, 'error': str(e)})
-        finally:
-            conn.close()
 
     laparams_dict = {
         'line_margin': laparams.line_margin,
@@ -49,8 +50,9 @@ def extract_text_with_timeout(pdf_path, laparams, timeout_seconds):
     result = parent_conn.recv()
     if not result['success']:
         raise Exception(result['error'])
-    
+
     return result['text']
+
 
 if __name__ == '__main__':
     input_pdf = Path(snakemake.params.pdf_path)
@@ -83,13 +85,13 @@ if __name__ == '__main__':
         else:
             print(f'No text extracted from {input_pdf.name}')
             output_txt.touch()
-            
+
     except TimeoutError as e:
         print(f'TIMEOUT while converting {input_pdf.name}: {e}')
         with open(output_txt, 'w', encoding='utf-8') as f:
             f.write("")
         sys.exit(0)
-        
+
     except Exception as e:
         print(f'ERROR converting {input_pdf.name}: {e}')
         with open(output_txt, 'w', encoding='utf-8') as f:
