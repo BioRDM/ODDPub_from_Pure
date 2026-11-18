@@ -4,14 +4,6 @@ from scripts.util import get_expected_files
 
 configfile: "config.yaml"
 
-env_map = {
-    "linux": "envs/selenium-linux.yaml",
-    "windows": "envs/selenium-windows.yaml",
-    "macos": "envs/selenium-windows.yaml"
-}
-
-selected_env = env_map.get(config["os_type"], "envs/selenium-linux.yaml")
-
 rule clean_table:
     input:
         data_file = config["main"]["input_file"]
@@ -21,35 +13,36 @@ rule clean_table:
         article_id = config["main"]["article_id"],
         article_links = config["main"]["article_links"]
     conda:
-        selected_env
+        "envs/selenium.yaml"
     script:
         "scripts/clean_table.py"
 
-rule download_pdfs:
+rule download_files:
     input:
         clean_table = "outputs/prelim_data/clean_table.csv"
     params:
-        download_folder = os.path.join(workflow.basedir, "outputs/PDFs"),
+        download_folder = os.path.join(workflow.basedir, "outputs/Files"),
         article_links = config["main"]["article_links"],
         url_separator = config["main"].get("url_separator", " // ")
     output:
-        touch("outputs/PDFs/.download_complete")
+        touch("outputs/Files/.download_complete")
     conda:
-        selected_env
+        "envs/selenium.yaml"
     script:
-        "scripts/download_pdfs.py"
+        "scripts/download_files.py"
 
-rule convert_pdf_to_txt:
+rule convert_to_txt:
     input:
-        sentinel = "outputs/PDFs/.download_complete"
+        sentinel = "outputs/Files/.download_complete",
     output:
         txt = "outputs/txt/{sample}.txt"
     params:
-        pdf_path = "outputs/PDFs/{sample}.pdf"
+        pdf = "outputs/Files/{sample}.pdf",
+        docx = "outputs/Files/{sample}.docx"
     conda:
-        selected_env
+        "envs/selenium.yaml"
     script:
-        "scripts/pdf_to_txt.py"
+        "scripts/convert_to_txt.py"
 
 rule run_oddpub:
     input:
@@ -81,6 +74,6 @@ rule sharing_score:
         article_id = config["main"]["article_id"],
         author_id = config["main"]["author_id"]
     conda:
-        selected_env
+        "envs/selenium.yaml"
     script:
         "scripts/sharing_score.py"

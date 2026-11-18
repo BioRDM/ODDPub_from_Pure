@@ -1,7 +1,5 @@
-os_type: linux  # linux, windows or macos
-
 main:
-  input_file: /media/Store/Daniel/Data_sharing_evaluation/ODDPub/ODDPub_from_Pure/test_data/SBS_pub_2023-2024_test.csv
+  input_file: /home/dthedie/Documents/Data_sharing_evaluation/ODDPub_from_Pure/test_data/SBS_pub_2023-2024_test.csv
   article_id: Article_Pure_ID
   article_links: Files
   url_separator: " // "

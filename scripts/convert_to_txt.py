@@ -1,6 +1,7 @@
 from pathlib import Path
 from pdfminer.high_level import extract_text
 from pdfminer.layout import LAParams
+import pypandoc
 import re
 import multiprocessing
 import sys
@@ -55,14 +56,18 @@ def extract_text_with_timeout(pdf_path, laparams, timeout_seconds):
 
 
 if __name__ == '__main__':
-    input_pdf = Path(snakemake.params.pdf_path)
+    pdf_file = Path(snakemake.params.pdf)
+    docx_file = Path(snakemake.params.docx)
     output_txt = Path(snakemake.output.txt)
 
     output_txt.parent.mkdir(parents=True, exist_ok=True)
-
-    if not input_pdf.exists():
-        with open(output_txt, 'w', encoding='utf-8') as f:
-            f.write("")
+    
+    if pdf_file.exists():
+        input_file = pdf_file
+    elif docx_file.exists():
+        input_file = docx_file
+    else:
+        output_txt.touch()
         sys.exit(0)
 
     laparams = LAParams(line_margin=0.5,
@@ -73,27 +78,34 @@ if __name__ == '__main__':
     TIMEOUT_SECONDS = 120
 
     try:
-        text = extract_text_with_timeout(input_pdf, laparams, TIMEOUT_SECONDS)
+        suffix = input_file.suffix.lower()
+        if suffix == '.pdf':
+            text = extract_text_with_timeout(input_file, laparams, TIMEOUT_SECONDS)
+        elif suffix == '.docx':
+            text = pypandoc.convert_file(input_file, 'plain')
+        else:
+            raise ValueError(f'Unsupported file extension: {suffix}')
 
-        if text:
+        if suffix == '.pdf' and text:
             # Remove dashes followed by a linebreak (hyphenated line breaks)
             text = re.sub(r'-\n', '\n', text)
             # Replace single linebreaks with space, keep double linebreaks
             text = re.sub(r'(?<!\n)\n(?!\n)', ' ', text)
             with open(output_txt, "w", encoding="utf-8") as f:
                 f.write(text)
+        elif suffix == '.docx' and text:
+            with open(output_txt, "w", encoding="utf-8") as f:
+                f.write(text)
         else:
-            print(f'No text extracted from {input_pdf.name}')
+            print(f'No text extracted from {input_file.name}')
             output_txt.touch()
 
     except TimeoutError as e:
-        print(f'TIMEOUT while converting {input_pdf.name}: {e}')
-        with open(output_txt, 'w', encoding='utf-8') as f:
-            f.write("")
+        print(f'TIMEOUT while converting {input_file.name}: {e}')
+        output_txt.touch()
         sys.exit(0)
 
     except Exception as e:
-        print(f'ERROR converting {input_pdf.name}: {e}')
-        with open(output_txt, 'w', encoding='utf-8') as f:
-            f.write("")
+        print(f'ERROR converting {input_file.name}: {e}')
+        output_txt.touch()
         sys.exit(0)
