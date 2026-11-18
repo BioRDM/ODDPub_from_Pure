@@ -1,6 +1,6 @@
 # ODDPub from Pure
 
-This repository contains a snakemake pipeline to download PDFs from the University of Edinburgh Pure, convert them to text, and run the [ODDPub data sharing detection algorithm](https://github.com/quest-bih/oddpub) on them.
+This repository contains a snakemake pipeline to download articles from the University of Edinburgh Pure, convert them to text, and run the [ODDPub data sharing detection algorithm](https://github.com/quest-bih/oddpub) on them.
 
 The only required input is a table of publications exported from Pure, with the following columns:
 
@@ -26,8 +26,6 @@ If not, [install Git](https://git-scm.com/install/windows).
 
 If you cannot or do not want to install Git on your computer, that's fine - at the repository cloning step (see below), download the code from GitHub instead of cloning.
 
-If you are using Windows or MacOS, MS Word will need to be installed on your machine (to convert docx files to pdf). If you are using Linux, Libreoffice should be installed.
-
 ### Snakemake
 
 **If you have already done this setup, skip this section and go to "Usage"**
@@ -40,7 +38,7 @@ Install pixi
 powershell -ExecutionPolicy Bypass -c "irm -useb https://pixi.sh/install.ps1 | iex"
 ```
 
-Create a new directory for snakemake. **Make sure the directory is on a local drive (C:\) and not a network drive (e.g. M:\ or U:\)**. To change directory, use `cd`.
+Create a new directory for snakemake. **Make sure the directory is on a local drive (C:\) and not a network drive (e.g. M:\ or U:\, or a path with "OneDrive - " in the name)**. To change directory, use `cd`.
 
 ```sh
 mkdir snakemake
@@ -80,15 +78,11 @@ Edit the config file:
 notepad config.yaml
 ```
 
-The main things to edit are:
-
-- OS type
-- Path to input data table (the repository contains an example table in the test-data repository if you want to test the pipeline)
-
-When working with your own data, make sure the following fields are also set correctly:
+Set the config fields:
 
 | Field         | Description                                                                                                                                                     |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| input_file    | Path to the input data table (the repository contains an example table in the test-data repository if you want to test the pipeline)                            |
 | article_id    | Column name for the article unique identifier (e.g. Pure ID)                                                                                                    |
 | article_links | Column name for the full text download links (usually called "Files" in Pure)                                                                                   |
 | url_separator | String that separates multiple URLs in the "article_links" column. If the string is "//", make sure to include spaces (" // ") so it does not match https://... |
@@ -111,9 +105,9 @@ Run the full pipeline:
 snakemake --cores all --use-conda sharing_score
 ```
 
-You will be prompted to authenticate with your University of Edinburgh logins once. After authentication, the browser window will show a 500 error. This is normal. Ignore the error, leave the window open, and return to the console. Press Enter to resume the pipeline. After this, the pipeline will be fully automated.
+You will be prompted to authenticate with your University of Edinburgh logins once. After authentication, the browser window will show a 500 error. This is normal. Ignore the error, leave the window open, and return to the console. Press Enter to resume the pipeline (press Enter a second time if the download does not start). After this, the pipeline will be fully automated.
 
-Note that the full execution of the pipeline will take **some time**, especially for several hundred articles (could be several hours).
+Note that the full execution of the pipeline will take **some time**, especially for several hundred articles.
 
 If the pipeline crashes at any point (or gets interrupted by the computer going to sleep, etc.), just restart it with the same command as above. It will recognise where it stopped, and resume from there. If PDF download had already completed, you won't be asked to enter your credentials again.
 
@@ -124,10 +118,10 @@ Pipeline outputs are saved in the "outputs" folder in the ODDPub_from_Pure repos
 - prelim_data/
   - clean_table.csv
 	- An intermediate table containing article IDs and download links
-- PDFs/
-  - The full text PDFs downloaded from Pure
+- Files/
+  - The full text articles downloaded from Pure, in PDF or docx format
 - txt/
-  - The article full text in .txt format, converted from the PDFs
+  - The article full text in .txt format, converted from the PDFs/docx files
 - oddpub/
   - oddpub_results.csv
 	- The results file output by ODDPub after running on the text files
@@ -148,6 +142,6 @@ The scripts folder contains the code used for the pipeline. All of it is Python,
 
 Environments are defined in yaml files in the "envs/" folder.
 
-There are two Python environments depending on OS (Linux or Windows, MacOS uses the Windows environment). The reason for this is that Windows/MacOS need the `docx2pdf` package to convert docx files to pdf at the download stage. This package is not available on Linux (which uses Libreoffice instead), so it's excluded from the environment.
+The Python environment is used for all Python data processing steps (mainly with pandas) and article downloads (with selenium).
 
 The R environment installs R and the basic libraries that are necessary. Installing ODDPub and its dependencies is done via [renv](https://rstudio.github.io/renv/articles/renv.html), with packages to install listed in "renv.lock".
