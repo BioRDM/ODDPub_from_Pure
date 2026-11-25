@@ -26,8 +26,8 @@ sharing_scores = (
     .assign(
         sharing_category=lambda df: pd.cut(
             df['sharing_score'],
-            bins=[-0.001, 0, 0.2, 0.4, 0.6, 0.8, 1],
-            labels=['0', '1-20%', '21-40%', '41-60%', '61-80%', '81-100%'],
+            bins=[-0.001, 0, 0.2, 0.4, 0.6, 0.8, 0.99, 1],
+            labels=['0', '1-20', '21-40', '41-60', '61-80', '81-99', '100'],
             right=True
         )
     )
